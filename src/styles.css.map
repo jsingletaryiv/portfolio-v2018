@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACiIA;;;;GAIG;AAskCH,mCAAmC;AA0mCnC,4CAA4C;AAwC5C,sBAAsB;AD11EtB,OAAO,CAAP,iJAAO;AAKP,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,mFAAmF;EAChG,MAAM,EAAE,CAAC;CACZ;;AAGD,AAAA,aAAa,CAAC;EAAE,UAAU,EAAE,ihBAAihB;CAAI",
+    "sources": [
+        "styles.scss",
+        "../node_modules/@angular/material/_theming.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}

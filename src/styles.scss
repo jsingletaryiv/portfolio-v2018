@@ -1,0 +1,20 @@
+// Adding in pre-built themes provided by ng-material
+// Relative pathing is currently not working - Believed to be related to sass-loader
+@import '../node_modules/@angular/material/theming';
+@import '../node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css';
+// @import '../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css';
+// @import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
+// @import '../node_modules/@angular/material/prebuilt-themes/purple-green.css';
+
+body {
+    font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    margin: 0;
+}
+
+// Base64 Encoded Images
+.angular-logo { background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=='); }
+// .react-logo { background: url('.'); }
+// .es7-logo { background: url('.'); }
+// .node-logo { background: url('.'); }
+// .material-logo { background: url('.'); }
+// .mongodb-logo { background: url('.'); }

@@ -1,0 +1,59 @@
+<!-- Below is the 'App Container' which contains the main layout/navigation -->
+<div class="app-container" [class.app-is-mobile]="mediaQuery.matches">
+  <mat-toolbar class="app-toolbar" color="primary" role="header">
+
+    <!-- List button will allow user to hide / show patient list -->
+    <!-- <button mat-icon-button (click)="snav.toggle()">
+      <mat-icon matTooltip="Hide / Show List" matTooltipPosition="below">list</mat-icon>
+    </button> -->
+
+    <!-- Filter list button will hide / show input field for filtering results -->
+    <!-- <button mat-icon-button (click)="filter.toggle()">
+      <mat-icon matTooltip="Hide / Show List Filter" matTooltipPosition="below">filter_list</mat-icon>
+    </button> -->
+
+    <!-- Application title and location in nav-header -->
+    <h1 class="app-title">{{ myName + '&nbsp; &#124; &nbsp;' + myLocation }}</h1>
+
+    <!-- Fills in the space in the center of the mat-toolbar -->
+    <span class="app-toolbar-spacer"></span>
+
+    <!-- Wire up the options menu -->
+    <nav>
+      <a mat-button routerLink=".">HOME</a>
+      <a mat-button routerLink=".">ABOUT</a>
+      <a mat-button routerLink=".">PROJECTS</a>
+      <a mat-button routerLink=".">SANDBOX</a>
+      <a mat-button routerLink=".">CONTACT</a>
+      <button mat-icon-button [matMenuTriggerFor]="optionsMenu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+    </nav>
+
+    <!-- Sub-menu for grouping similar account option -->
+    <mat-menu #optionsMenu="matMenu" xPosition="before" yPosition="below" [overlapTrigger]="false">
+      <div>
+        <span>Social Media:</span>
+        <mat-divider [inset]="false"></mat-divider>
+      </div>
+      <button mat-menu-item>
+        <mat-icon color="primary">account_box</mat-icon>
+        <span>Sign-In</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>settings</mat-icon>
+        <span>Update Settings</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>search</mat-icon>
+        <span>Search Network</span>
+      </button>
+    </mat-menu>
+  </mat-toolbar>
+</div>
+
+<div style="text-align:center">
+  <h1>{{ appTitle }}</h1>
+</div>
+
+<router-outlet></router-outlet>
