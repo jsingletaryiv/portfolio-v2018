@@ -19,9 +19,9 @@ export class AppComponent implements OnDestroy {
 
   @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;
 
-  someMethod() {
-    this.trigger.openMenu();
-  }
+  // someMethod(): void {
+  //   this.trigger.openMenu();
+  // }
 
   constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
     this.mediaQuery = media.matchMedia('(max-width: 600px)');
