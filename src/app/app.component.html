@@ -1,8 +1,8 @@
-<!-- Below is the 'App Container' which contains the components for header, footer, and main -->
+<!-- Below is the 'App Container' which contains components for the main navbar, footer, and routing -->
 <div class="app-container" [class.app-is-mobile]="mediaQuery.matches">
   <app-navbar></app-navbar>
   <div class="app-content">
-    <router-outlet>Loading...</router-outlet>
+    <router-outlet></router-outlet>
   </div>
   <app-footer></app-footer>
 </div>
