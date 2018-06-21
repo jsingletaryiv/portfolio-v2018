@@ -18,9 +18,16 @@
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
-      "styles": ["styles.scss"],
+      "styles": [
+        "styles.scss",
+        "themes/green-gunmetal.scss"
+      ],
       "stylePreprocessorOptions": {
-        "includePaths": ["./", "./themes"]
+        "includePaths": [
+          "./",
+          "./themes",
+          "../node_modules"
+        ]
       },
       "scripts": [],
       "environmentSource": "environments/environment.ts",
