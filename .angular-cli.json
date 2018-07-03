@@ -20,11 +20,12 @@
       "prefix": "app",
       "styles": [
         "styles.scss",
-        "themes/green-gunmetal.scss"
+        "themes/coral-reef.scss"
       ],
       "stylePreprocessorOptions": {
         "includePaths": [
           "./",
+          "./assets",
           "./themes",
           "../node_modules"
         ]
