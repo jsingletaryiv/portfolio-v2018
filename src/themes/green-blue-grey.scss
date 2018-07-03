@@ -14,4 +14,5 @@ $app-theme:         mat-dark-theme($app-theme-primary, $app-theme-accent, $app-t
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component that you are using.
+// Pass the app-theme variable to the theme constructor.
 @include angular-material-theme($app-theme);
