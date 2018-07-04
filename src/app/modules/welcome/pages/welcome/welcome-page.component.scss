@@ -1,0 +1,40 @@
+// Custom styles for 'slide over header effect'
+// TODO:: Generate dedicated component to hold this header feature 
+body {
+    background: #eaeaea;
+    font-family: 'Lato', normal;
+    text-align: center;
+}
+
+.page-header-container {
+    background: #ddd;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.title {
+    background-image: url('../../../../../assets/images/superearth20180412-16.jpg'); // Ad-Hoc 
+    background-size: cover;
+    background-attachment: fixed;
+    // border-top: 20px solid red;
+    // border-bottom: 20px solid red;
+    width: 100%;
+    height: 100vh;
+    // padding: 2rem 0;
+}
+
+.title h1 {
+    font-family: 'Unica One', normal;
+    // font-size: 5rem;
+    // color: #fff;
+    text-shadow: 2px 2px 2px #333;
+}
+
+small {
+    // color: red;
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
