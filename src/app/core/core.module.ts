@@ -5,7 +5,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoreRoutingModule } from './core-routing.module';
 import { SharedModule } from '@app/shared';
 
-import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
@@ -16,12 +15,10 @@ import { NavbarComponent } from './navbar/navbar.component';
     SharedModule
   ],
   declarations: [
-    FooterComponent,
     NavbarComponent
   ],
   exports: [
     CoreRoutingModule,
-    FooterComponent,
     NavbarComponent
   ],
   providers: []
