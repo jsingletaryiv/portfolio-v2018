@@ -25,7 +25,6 @@
       "stylePreprocessorOptions": {
         "includePaths": [
           "./",
-          "./assets",
           "./themes",
           "../node_modules"
         ]

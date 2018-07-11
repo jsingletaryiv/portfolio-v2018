@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class WelcomePageComponent implements OnInit {
 
   viewTitle = 'James Singletary\'s Online Portfolio';
-  viewSubTitle = 'Welcome to my tiny footprint on the Internet:';
+  viewSubTitle = 'Welcome to my tiny corner of the Internet!';
 
   constructor() { }
 
