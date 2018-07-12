@@ -1,12 +1,4 @@
-/* Custom styles and/or MDC overrides.*/
-app-navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 3;
-}
-
+/* Custom styles and/or AMC overrides.*/
 .app-navbar h1 {
   font-family: 'Unica One', normal;
 }

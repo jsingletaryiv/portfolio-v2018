@@ -28,7 +28,7 @@ header {
     transform-style: inherit;
 }
 
-header .header-content {
+header .app-header-content {
     width: 100%;
     position: absolute;
     top: 50%;
@@ -48,19 +48,19 @@ header::before {
     bottom: 0;
     left: 0;
     content: "";
-    display: inline-block;
-    background-color: #000;
+    display: block;
+    background-color: #1d1d1d;
     background-image: url('../../../../../assets/images/wp-image-144389247.jpg'); // Ad-Hoc
     background-position: top center;
     background-size: auto 600px;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    -webkit-transform: scale(1.8) translate(-10px, -65px);
-    -moz-transform:    scale(1.8) translate(-10px, -65px);
-    -ms-transform:     scale(1.8) translate(-10px, -65px);
-    -o-transform:      scale(1.8) translate(-10px, -65px);
-    transform:         scale(1.8) translate(-10px, -50px);
     transform-origin:  center center 0;
+    -webkit-transform: scale(1.8) translate(-10px, -50px);
+    -moz-transform:    scale(1.8) translate(-10px, -50px);
+    -ms-transform:     scale(1.8) translate(-10px, -50px);
+    -o-transform:      scale(1.8) translate(-10px, -50px);
+    transform:         scale(1.8) translate(-10px, -50px);
     z-index: -1;
 }
 
