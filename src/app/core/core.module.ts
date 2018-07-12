@@ -7,6 +7,10 @@ import { SharedModule } from '@app/shared';
 
 import { NavbarComponent } from './navbar/navbar.component';
 
+/* TODO:: Generate a utils.module that will contain various
+  directives to help facilitate System / Admin requests */
+import { environment } from '../../environments/environment';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -25,6 +29,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 })
 export class CoreModule {
 
+  // Request current version of Angular
+  public appVersion: string = environment.VERSION;
+
   // CoreModule Import Guard - See AppModule
   constructor (@Optional() @SkipSelf() parentModule: CoreModule) {
 
@@ -32,6 +39,7 @@ export class CoreModule {
       throw new Error('CoreModule is already loaded. Import only in AppModule');
     } else {
       console.log('CoreModule Loaded!');
+      console.log('App Version: v' + this.appVersion);
     }
   }
 }

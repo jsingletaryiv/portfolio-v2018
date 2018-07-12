@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Optional } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { MaterialModule } from './material/material.module';
@@ -14,9 +14,9 @@ import { FooterComponent } from './footer/footer.component';
     FooterComponent
   ],
   exports: [
+    CommonModule,
     MaterialModule,
-    FooterComponent,
-    CommonModule
+    FooterComponent
   ]
 })
 export class SharedModule { }
