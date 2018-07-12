@@ -1,8 +1,12 @@
 <!-- Below is the 'App Container' which contains components for the main navbar, footer, and routing -->
-<div class="app-container" [class.app-is-mobile]="mediaQuery.matches">
+<!-- <div class="app-container" [class.app-is-mobile]="mediaQuery.matches">
   <app-navbar></app-navbar>
   <div class="app-content">
     <router-outlet></router-outlet>
   </div>
   <app-footer></app-footer>
-</div>
+</div> -->
+
+<app-navbar class="mat-elevation-z6"></app-navbar>
+<router-outlet></router-outlet>
+<!-- <app-footer></app-footer> -->

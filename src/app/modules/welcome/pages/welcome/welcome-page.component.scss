@@ -1,33 +1,71 @@
-// Custom styles for 'slide over header effect'
-// TODO:: Generate dedicated component to hold this header feature 
+// Custom styles for Parallax effect
+/* TODO:: Generate dedicated component for header feature...
+   Move all markup and styles needed for Parallax */
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
 body {
-    background: #eaeaea;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;
     font-family: 'Lato', normal;
-    text-align: center;
 }
 
-.page-header-container {
-    background: #ddd;
-    padding: 2rem 0;
+header {
+    height: 450px;
     width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    transform-style: inherit;
 }
 
-.title {
-    background-image: url('../../../../../assets/images/superearth20180412-16.jpg'); // Ad-Hoc 
-    background-size: cover;
+header .header-content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+
+    h1, h2 {
+        font-family: 'Unica One', normal;
+        text-shadow: 2px 2px 2px #333;
+    }
+}
+
+header, header::before {
+    background: 50% 50% / auto 600px;
+}
+
+header::before {
+    height: 700px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    display: block;
+    background-image: url('../../../../../assets/images/wp-image-144389247.jpg'); // Ad-Hoc
+    background-size: auto 600px;
     background-attachment: fixed;
-    // border-top: 20px solid red;
-    // border-bottom: 20px solid red;
-    width: 100%;
-    height: 100vh;
-    // padding: 2rem 0;
+    background-position: top center;
+    background-repeat: no-repeat;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
 }
 
-.title h1 {
-    font-family: 'Unica One', normal;
-    // font-size: 5rem;
-    // color: #fff;
-    text-shadow: 2px 2px 2px #333;
+header * {
+    // font-weight: normal;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 0;
+    padding: .5em 0;
 }
 
 small {

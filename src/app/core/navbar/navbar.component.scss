@@ -1,4 +1,4 @@
-/* Custom styles and/or MDC overrides.*/
+/* Custom styles and/or AMC overrides.*/
 .app-navbar h1  {
     font-family: 'Unica One', normal;
     // font-size: 5rem;
@@ -6,18 +6,23 @@
     // text-shadow: 2px 2px 2px #333;
 }
 
-.mat-button {
-    font-family: 'Unica One', normal;
-}
-
-h1.app-title {
-    margin-left: 8px;
+.app-navbar h1.app-title {
+    margin-left: 4px;
 }
 
 .app-is-mobile .app-navbar {
-    position: fixed;
-    /* Make sure the toolbar will stay on top of the content as it scrolls past. */
-    z-index: 2;
+    // Create Sticky Navbar
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.mat-button {
+    font-family: 'Unica One', normal;
 }
 
 .app-navbar-spacer {

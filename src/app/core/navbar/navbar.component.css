@@ -1,12 +1,32 @@
 /* Custom styles and/or MDC overrides.*/
-h1.app-title {
-  margin-left: 8px;
+app-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.app-navbar h1 {
+  font-family: 'Unica One', normal;
+}
+
+.app-navbar h1.app-title {
+  margin-left: 4px;
 }
 
 .app-is-mobile .app-navbar {
-  position: fixed;
-  /* Make sure the toolbar will stay on top of the content as it scrolls past. */
-  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.mat-button {
+  font-family: 'Unica One', normal;
 }
 
 .app-navbar-spacer {
@@ -15,5 +35,31 @@ h1.app-title {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+  padding: 0 8px;
+  width: 100%;
+}
+
+.mat-toolbar-multiple-rows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.mat-toolbar-multiple-rows {
+  min-height: 50px;
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+  height: 50px;
 }
 /*# sourceMappingURL=navbar.component.css.map */
