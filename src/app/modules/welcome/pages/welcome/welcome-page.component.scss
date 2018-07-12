@@ -22,7 +22,7 @@ body {
 }
 
 header {
-    height: 60vh;
+    height: 45vh;
     width: 100%;
     position: relative;
     transform-style: inherit;
@@ -32,7 +32,7 @@ header .header-content {
     width: 100%;
     position: absolute;
     top: 50%;
-    margin-top: -50px;
+    margin: -50px 0 0 100px;
 
     h1, h2 {
         font-family: 'Unica One', normal;
@@ -41,7 +41,7 @@ header .header-content {
 }
 
 header::before {
-    height: 60vh;
+    height: 50vh;
     position: absolute;
     top: 0;
     right: 0;
@@ -59,8 +59,8 @@ header::before {
     -moz-transform:    scale(1.8) translate(-10px, -65px);
     -ms-transform:     scale(1.8) translate(-10px, -65px);
     -o-transform:      scale(1.8) translate(-10px, -65px);
-    transform:         scale(1.8) translate(-10px, -65px);
-    transform-origin: center center 0;
+    transform:         scale(1.8) translate(-10px, -50px);
+    transform-origin:  center center 0;
     z-index: -1;
 }
 
@@ -68,7 +68,7 @@ header * {
     // font-weight: normal;
     letter-spacing: 0.2em;
     text-align: left;
-    margin: 0 70px;
+    margin: 0;
     padding: .5em 0;
 }
 
