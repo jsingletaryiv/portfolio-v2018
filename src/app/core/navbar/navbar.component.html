@@ -1,17 +1,7 @@
 <mat-toolbar class="app-navbar" color="primary" role="header">
 
-  <!-- List button will allow user to hide / show patient list -->
-  <!-- <button mat-icon-button (click)="snav.toggle()">
-    <mat-icon matTooltip="Hide / Show List" matTooltipPosition="below">list</mat-icon>
-  </button> -->
-
-  <!-- Filter list button will hide / show input field for filtering results -->
-  <!-- <button mat-icon-button (click)="filter.toggle()">
-    <mat-icon matTooltip="Hide / Show List Filter" matTooltipPosition="below">filter_list</mat-icon>
-  </button> -->
-
   <!-- Application title and location -->
-  <h1 class="app-title">{{ myName + '&nbsp; &#124; &nbsp;' + myLocation }}</h1>
+  <h1 class="app-title">{{ myLocation | uppercase }}</h1>
 
   <!-- Fills in the center space of the mat-toolbar -->
   <span class="app-navbar-spacer"></span>

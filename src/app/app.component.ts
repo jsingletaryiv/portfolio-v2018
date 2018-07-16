@@ -11,8 +11,6 @@ import { MediaMatcher } from '@angular/cdk/layout';
 export class AppComponent implements OnDestroy {
   myName = 'James Singletary IV';
   myLocation = 'Tampa, Florida';
-  appTitle = 'James Singletary\'s Online Portfolio';
-  appSubTitle = 'Welcome to my tiny footprint on the Internet:';
   mediaQuery: MediaQueryList;
 
   private _mediaQueryListener: () => void;

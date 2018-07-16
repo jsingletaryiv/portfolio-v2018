@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   myName = 'James Singletary IV';
-  myLocation = 'Tampa, Florida';
+  myLocation = 'Located in Tampa, Florida';
 
   constructor() { }
 

@@ -7,12 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomePageComponent implements OnInit {
 
-  viewTitle = 'James Singletary\'s Online Portfolio';
-  viewSubTitle = 'Welcome to my tiny corner of the Internet!';
+  welcomePageTitle = 'James Singletary IV';
+  welcomePageSubTitle = 'Senior Application / Software / UI/UX Developer';
+  welcomePageSectionTitle = 'Welcome to my tiny footprint on the internet...';
+  missionTitle = 'Mission:';
 
   constructor() { }
 
   ngOnInit() {
+    // Init welcome page here...
   }
-
 }

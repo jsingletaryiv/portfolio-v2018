@@ -1,7 +1,7 @@
 {
   "name": "portfolio-v2018",
   "version": "1.0.0",
-  "keywords": [],
+  "keywords": ["Portfolio"],
   "author": "James Singletary",
   "license": "MIT",
   "scripts": {

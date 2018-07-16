@@ -1,14 +1,120 @@
-.app-content h1, .app-content h2, .app-content h3, .app-content h4 {
-  font-family: Amatic SC,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+/* NOTE:: Relative pathing is currently not working - Believed to be related to sass-loader
+   Current theme imports from .angular-cli.json via 'apps.styles' property */
+app-root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+app-root > app-about,
+app-root > app-contact,
+app-root > app-projects,
+app-root > app-sandbox,
+app-root > app-welcome {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+app-root > app-about h1, app-root > app-about h2, app-root > app-about h3, app-root > app-about h4,
+app-root > app-contact h1,
+app-root > app-contact h2,
+app-root > app-contact h3,
+app-root > app-contact h4,
+app-root > app-projects h1,
+app-root > app-projects h2,
+app-root > app-projects h3,
+app-root > app-projects h4,
+app-root > app-sandbox h1,
+app-root > app-sandbox h2,
+app-root > app-sandbox h3,
+app-root > app-sandbox h4,
+app-root > app-welcome h1,
+app-root > app-welcome h2,
+app-root > app-welcome h3,
+app-root > app-welcome h4 {
+  font-family: Comfortaa,Helvetica Neue,Helvetica,Arial,sans-serif;
   margin: 0;
 }
 
-.app-content body {
-  font-family: Lato,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+app-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+body {
+  font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
   margin: 0;
+}
+
+section.page-section-container {
+  background-color: #212121;
+  width: 100vw;
+  z-index: 2;
+}
+
+section.page-section-container article {
+  padding: 8vh 10vw 5vh;
+}
+
+section.page-section-container article div.page-content-card {
+  min-height: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+}
+
+section.page-section-container article .primary {
+  background-color: #404e71;
+}
+
+section.page-section-container article .accent {
+  background-color: #8BC34A;
+}
+
+section.page-section-container article div.page-content-flat {
+  min-height: 20px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+}
+
+section.page-section-container .page-content-spacer {
+  height: 1000px;
 }
 
 .angular-logo {
   background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==");
+}
+
+@media (max-width: 720px) {
+  app-root {
+    top: 90px;
+  }
+  app-root > app-about,
+  app-root > app-contact,
+  app-root > app-projects,
+  app-root > app-sandbox,
+  app-root > app-welcome {
+    overflow-x: hidden;
+    overflow-y: visible;
+    padding: 10px 20px 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
