@@ -10,6 +10,7 @@ export class WelcomePageComponent implements OnInit {
   welcomePageTitle = 'James Singletary IV';
   welcomePageSubTitle = 'Senior Application / Software / UI/UX Developer';
   welcomePageSectionTitle = 'Welcome to my tiny footprint on the internet...';
+  missionTitle = 'Mission:';
 
   constructor() { }
 

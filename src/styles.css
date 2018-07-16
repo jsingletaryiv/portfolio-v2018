@@ -41,7 +41,7 @@ app-root > app-welcome h1,
 app-root > app-welcome h2,
 app-root > app-welcome h3,
 app-root > app-welcome h4 {
-  font-family: Amatic SC,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+  font-family: Comfortaa,Helvetica Neue,Helvetica,Arial,sans-serif;
   margin: 0;
 }
 
@@ -50,24 +50,52 @@ app-navbar {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 3;
 }
 
 body {
-  font-family: Lato,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+  font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
   margin: 0;
 }
 
-.page-section-container {
-  background: #1d1d1d;
-  width: 100%;
+section.page-section-container {
+  background-color: #212121;
+  width: 100vw;
+  z-index: 2;
 }
 
-.page-section-container article {
-  padding: 40px 100px 0;
+section.page-section-container article {
+  padding: 8vh 10vw 5vh;
 }
 
-.page-section-container .page-content-spacer {
+section.page-section-container article div.page-content-card {
+  min-height: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+}
+
+section.page-section-container article .primary {
+  background-color: #404e71;
+}
+
+section.page-section-container article .accent {
+  background-color: #8BC34A;
+}
+
+section.page-section-container article div.page-content-flat {
+  min-height: 20px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+}
+
+section.page-section-container .page-content-spacer {
   height: 1000px;
 }
 

@@ -16,35 +16,34 @@ body {
   padding: 0;
   overflow-y: scroll;
   overflow-x: hidden;
-  -webkit-perspective: 50em;
-          perspective: 50em;
+  -webkit-perspective: 20rem;
+          perspective: 20rem;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   font-family: 'Lato', normal;
 }
 
 header {
-  height: 45vh;
-  width: 100%;
+  height: 40vh;
+  width: 100vw;
   position: relative;
   -webkit-transform-style: inherit;
           transform-style: inherit;
 }
 
 header .app-header-content {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  margin: -50px 0 0 100px;
+  position: relative;
+  padding: 20vh 5vw 5vh 5vw;
+  z-index: -1;
 }
 
-header .app-header-content h1, header .app-header-content h2 {
-  font-family: 'Unica One', normal;
+header .app-header-content h1, header .app-header-content h2, header .app-header-content h3, header .app-header-content h4 {
+  font-family: 'Comfortaa', normal;
   text-shadow: 2px 2px 2px #333;
 }
 
 header::before {
-  height: 50vh;
+  height: 500px;
   position: absolute;
   top: 0;
   right: 0;
@@ -52,7 +51,7 @@ header::before {
   left: 0;
   content: "";
   display: block;
-  background-color: #1d1d1d;
+  background-color: #212121;
   background-image: url("../../../../../assets/images/wp-image-144389247.jpg");
   background-position: top center;
   background-size: auto 600px;
@@ -60,16 +59,19 @@ header::before {
   background-repeat: no-repeat;
   -webkit-transform-origin: center center 0;
           transform-origin: center center 0;
-  -webkit-transform: scale(1.8) translate(-10px, -50px);
-  transform: scale(1.8) translate(-10px, -50px);
+  -webkit-transform: scale(2) translate(0, -50px);
+  transform: scale(2) translate(0, -50px);
   z-index: -1;
 }
 
 header * {
-  letter-spacing: 0.2em;
+  letter-spacing: .4rem;
   text-align: left;
   margin: 0;
-  padding: .5em 0;
+}
+
+header * h1, header * h2, header * h3, header * h4 {
+  margin: 1rem;
 }
 
 small {
@@ -77,6 +79,6 @@ small {
 }
 
 p {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 /*# sourceMappingURL=welcome-page.component.css.map */
