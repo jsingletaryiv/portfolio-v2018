@@ -7,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomePageComponent implements OnInit {
 
-  welcomePageTitle = 'James Singletary IV';
-  welcomePageSubTitle = 'Senior Application / Software / UI/UX Developer';
-  welcomePageSectionTitle = 'Welcome to my tiny footprint on the internet...';
-  missionTitle = 'Mission:';
+  // Page Header
+  pageTitle = 'James Singletary IV';
+  pageSubTitle = 'Senior Application / Software / UI/UX Developer';
+
+  // Section 1
+  section1Title = 'Hello and welcome to my tiny imprint on the internet...';
+  section1Text = '';
+  missionTitle = 'Mission Statement:';
+  missionText = '';
 
   constructor() { }
 

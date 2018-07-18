@@ -1,5 +1,19 @@
 /* NOTE:: Relative pathing is currently not working - Believed to be related to sass-loader
-   Current theme imports from .angular-cli.json via 'apps.styles' property */
+Current theme imports from .angular-cli.json via 'apps.styles' property */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
+    margin: 0;
+}
+
 app-root {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -15,6 +29,15 @@ app-root {
     right: 0;   
 }
 
+app-navbar {
+    // Create Sticky Navbar
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
 app-root > app-about, 
 app-root > app-contact, 
 app-root > app-projects, 
@@ -28,68 +51,57 @@ app-root > app-welcome  {
         font-family: Comfortaa,Helvetica Neue,Helvetica,Arial,sans-serif;
         margin: 0;
     }
-}
 
-app-navbar {
-    // Create Sticky Navbar
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 3;
-}
+    section.page-section-container { 
+        background-color: #212121;
+        width: 100vw;
+        z-index: 2;
 
-body {
-    font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
-    margin: 0;
-}
-
-section.page-section-container { 
-    background-color: #212121;
-    // background-color: #1d1d1d;
-    // padding: 2rem 0;
-    width: 100vw;
-    z-index: 2;
-
-    article {
-        padding: 8vh 10vw 5vh;
-        // TODO:: Consider page-content-well into custom function
-        div.page-content-card {
-            min-height: 20px;
-            padding: 20px;
-            margin-bottom: 20px;
-            border: 1px solid transparent;
-            border-radius: 0;
-            -webkit-box-shadow: none;
-            -ms-box-shadow: none;
-            box-shadow: none;
-            
-        }.primary {
-            background-color: #404e71;
-        }.accent {
-            background-color: #8BC34A;
+        small {
+            // color: red;
+            font-size: 1.5rem;
         }
-
-        div.page-content-flat {
-            min-height: 20px;
-            margin-bottom: 20px;
-            -webkit-box-shadow: none;
-            -ms-box-shadow: none;
-            box-shadow: none;
+        
+        p {
+            margin-bottom: 2rem;
         }
-        // Emphasize first letter of paragraph
-        // p::first-letter {
-        //     font-family: 'Fredericka the Great', normal;
-        //     font-size: 3rem;
-        //     line-height: .7;
-        //     float: left;
-        //     padding-right: 10px;
-        //     padding-top: 4px;
-        // }
-    }
-
-    .page-content-spacer { // Ad-Hoc
-        height: 1000px;
+        
+        p:last-child {
+            margin-bottom: 0;
+        }
+    
+        article {
+            padding: 5vh 20vw 5vh;
+            // Custom overrides for mat-card component
+            .page-content-card {
+                min-height: 20px;
+                padding: 20px;
+                margin-bottom: 20px;
+                border: 1px solid transparent;
+                border-radius: 0;
+                -webkit-box-shadow: none;
+                -ms-box-shadow: none;
+                box-shadow: none;
+    
+                .mat-card-header > .mat-card-header-text {
+                    margin: 0 0 16px 0;
+                }
+            }
+    
+            // Emphasize first letter of paragraph
+            // p::first-letter {
+            //     font-family: 'Fredericka the Great', normal;
+            //     font-size: 3rem;
+            //     line-height: .7;
+            //     float: left;
+            //     padding-right: 10px;
+            //     padding-top: 4px;
+            // }
+        }
+    
+        .page-content-spacer { // Ad-Hoc
+            height: 400px;
+        }
     }
 }
 
