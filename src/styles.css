@@ -1,5 +1,20 @@
 /* NOTE:: Relative pathing is currently not working - Believed to be related to sass-loader
-   Current theme imports from .angular-cli.json via 'apps.styles' property */
+Current theme imports from .angular-cli.json via 'apps.styles' property */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
+  margin: 0;
+}
+
 app-root {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,6 +28,14 @@ app-root {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+app-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
 }
 
 app-root > app-about,
@@ -45,30 +68,53 @@ app-root > app-welcome h4 {
   margin: 0;
 }
 
-app-navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 3;
-}
-
-body {
-  font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
-  margin: 0;
-}
-
-section.page-section-container {
+app-root > app-about section.page-section-container,
+app-root > app-contact section.page-section-container,
+app-root > app-projects section.page-section-container,
+app-root > app-sandbox section.page-section-container,
+app-root > app-welcome section.page-section-container {
   background-color: #212121;
   width: 100vw;
   z-index: 2;
 }
 
-section.page-section-container article {
-  padding: 8vh 10vw 5vh;
+app-root > app-about section.page-section-container small,
+app-root > app-contact section.page-section-container small,
+app-root > app-projects section.page-section-container small,
+app-root > app-sandbox section.page-section-container small,
+app-root > app-welcome section.page-section-container small {
+  font-size: 1.5rem;
 }
 
-section.page-section-container article div.page-content-card {
+app-root > app-about section.page-section-container p,
+app-root > app-contact section.page-section-container p,
+app-root > app-projects section.page-section-container p,
+app-root > app-sandbox section.page-section-container p,
+app-root > app-welcome section.page-section-container p {
+  margin-bottom: 2rem;
+}
+
+app-root > app-about section.page-section-container p:last-child,
+app-root > app-contact section.page-section-container p:last-child,
+app-root > app-projects section.page-section-container p:last-child,
+app-root > app-sandbox section.page-section-container p:last-child,
+app-root > app-welcome section.page-section-container p:last-child {
+  margin-bottom: 0;
+}
+
+app-root > app-about section.page-section-container article,
+app-root > app-contact section.page-section-container article,
+app-root > app-projects section.page-section-container article,
+app-root > app-sandbox section.page-section-container article,
+app-root > app-welcome section.page-section-container article {
+  padding: 5vh 20vw 5vh;
+}
+
+app-root > app-about section.page-section-container article .page-content-card,
+app-root > app-contact section.page-section-container article .page-content-card,
+app-root > app-projects section.page-section-container article .page-content-card,
+app-root > app-sandbox section.page-section-container article .page-content-card,
+app-root > app-welcome section.page-section-container article .page-content-card {
   min-height: 20px;
   padding: 20px;
   margin-bottom: 20px;
@@ -79,24 +125,20 @@ section.page-section-container article div.page-content-card {
   box-shadow: none;
 }
 
-section.page-section-container article .primary {
-  background-color: #404e71;
+app-root > app-about section.page-section-container article .page-content-card .mat-card-header > .mat-card-header-text,
+app-root > app-contact section.page-section-container article .page-content-card .mat-card-header > .mat-card-header-text,
+app-root > app-projects section.page-section-container article .page-content-card .mat-card-header > .mat-card-header-text,
+app-root > app-sandbox section.page-section-container article .page-content-card .mat-card-header > .mat-card-header-text,
+app-root > app-welcome section.page-section-container article .page-content-card .mat-card-header > .mat-card-header-text {
+  margin: 0 0 16px 0;
 }
 
-section.page-section-container article .accent {
-  background-color: #8BC34A;
-}
-
-section.page-section-container article div.page-content-flat {
-  min-height: 20px;
-  margin-bottom: 20px;
-  -webkit-box-shadow: none;
-  -ms-box-shadow: none;
-  box-shadow: none;
-}
-
-section.page-section-container .page-content-spacer {
-  height: 1000px;
+app-root > app-about section.page-section-container .page-content-spacer,
+app-root > app-contact section.page-section-container .page-content-spacer,
+app-root > app-projects section.page-section-container .page-content-spacer,
+app-root > app-sandbox section.page-section-container .page-content-spacer,
+app-root > app-welcome section.page-section-container .page-content-spacer {
+  height: 400px;
 }
 
 .angular-logo {

@@ -7,6 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsPageComponent implements OnInit {
 
+  // Page Header
+  pageTitle = 'Projects';
+  pageSubTitle = 'Showcase from Past to Present';
+
+  // Section 1
+  section1Title = 'From Concept to Creation:';
+  section1Text = '';
+  missionTitle = 'Test Card:';
+  missionText = '';
+
   constructor() { }
 
   ngOnInit() {

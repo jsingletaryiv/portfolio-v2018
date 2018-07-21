@@ -7,6 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SandboxPageComponent implements OnInit {
 
+  // Page Header
+  pageTitle = 'Sandbox';
+  pageSubTitle = 'Case Studies & Code Samples';
+
+  // Section 1
+  section1Title = 'New project - New Requirements ';
+  section1Text = '';
+  missionTitle = 'Test Card:';
+  missionText = '';
+
   constructor() { }
 
   ngOnInit() {

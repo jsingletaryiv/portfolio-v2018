@@ -1,6 +1,10 @@
 /* Custom styles and/or AMC overrides.*/
 .app-footer {
-  margin-top: 40px;
+  position: relative;
+}
+
+.app-footer .mat-toolbar-row, .app-footer .mat-toolbar-single-row {
+  height: 90px;
 }
 
 .app-footer-row {
@@ -14,7 +18,7 @@
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  padding: 8px;
+  padding: 0 8px;
   width: 100%;
 }
 

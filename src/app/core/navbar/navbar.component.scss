@@ -21,30 +21,20 @@
     flex-direction: column;
 }
 
-.mat-button {
-    font-family: 'Unica One', normal;
-}
-
 .app-navbar-spacer {
     /* This fills the remaining space, by using flexbox. 
        Every toolbar row uses a flexbox row layout. */
     flex: 1 1 auto;
 }
 
-.mat-toolbar-row, .mat-toolbar-single-row {
-    padding: 0 8px;
-    width: 100%;
-}
-    
-.mat-toolbar-multiple-rows {
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: column;
-    width: 100%;
+.mat-button {
+    font-family: 'Unica One', normal;
 }
 
 .mat-toolbar-multiple-rows {
     min-height: 50px;
-}.mat-toolbar-row, .mat-toolbar-single-row { 
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row { 
     height: 50px;
 }
