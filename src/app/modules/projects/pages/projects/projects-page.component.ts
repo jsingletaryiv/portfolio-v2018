@@ -8,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class ProjectsPageComponent implements OnInit {
 
   // Page Header
-  pageTitle = 'Title';
-  pageSubTitle = 'Sub-Title';
+  pageTitle = 'Projects';
+  pageSubTitle = 'Showcase from Past to Present';
 
   // Section 1
-  section1Title = 'Test...';
+  section1Title = 'From Concept to Creation:';
   section1Text = '';
-  missionTitle = 'Mission:';
+  missionTitle = 'Test Card:';
   missionText = '';
 
   constructor() { }

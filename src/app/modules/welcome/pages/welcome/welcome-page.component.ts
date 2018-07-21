@@ -12,7 +12,7 @@ export class WelcomePageComponent implements OnInit {
   pageSubTitle = 'Senior Application / Software / UI/UX Developer';
 
   // Section 1
-  section1Title = 'Hello and welcome to my tiny imprint on the internet...';
+  section1Title = 'Welcome to my tiny imprint on the internet...';
   section1Text = '';
   missionTitle = 'Mission Statement:';
   missionText = '';

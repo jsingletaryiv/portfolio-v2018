@@ -8,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class ContactPageComponent implements OnInit {
 
   // Page Header
-  pageTitle = 'Title';
-  pageSubTitle = 'Sub-Title';
+  pageTitle = 'Contact';
+  pageSubTitle = 'Let me know what you think';
 
   // Section 1
-  section1Title = 'Test...';
+  section1Title = 'Personal Information / Social Media Outlets';
   section1Text = '';
-  missionTitle = 'Mission:';
+  missionTitle = 'Test Card:';
   missionText = '';
 
   constructor() { }
