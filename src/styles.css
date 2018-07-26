@@ -1,5 +1,3 @@
-/* NOTE:: Relative pathing is currently not working - Believed to be related to sass-loader
-Current theme imports from .angular-cli.json via 'apps.styles' property */
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

@@ -1,5 +1,7 @@
-/* NOTE:: Relative pathing is currently not working - Believed to be related to sass-loader
-Current theme imports from .angular-cli.json via 'apps.styles' property */
+// NOTE:: Relative pathing is currently not working - Believed to be related to sass-loader
+// Current theme imports from .angular-cli.json via 'apps.styles' property
+@import './app/shared/styles/flexbox-prefix';
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -47,7 +49,6 @@ app-root > app-welcome  {
     overflow-y: auto;
 
     h1, h2, h3, h4 {
-        // font-family: Amatic SC,Helvetica Neue,Helvetica,Arial,sans-serif;
         font-family: Comfortaa,Helvetica Neue,Helvetica,Arial,sans-serif;
         margin: 0;
     }
@@ -87,16 +88,6 @@ app-root > app-welcome  {
                     margin: 0 0 16px 0;
                 }
             }
-    
-            // Emphasize first letter of paragraph
-            // p::first-letter {
-            //     font-family: 'Fredericka the Great', normal;
-            //     font-size: 3rem;
-            //     line-height: .7;
-            //     float: left;
-            //     padding-right: 10px;
-            //     padding-top: 4px;
-            // }
         }
     
         .page-content-spacer { // Ad-Hoc

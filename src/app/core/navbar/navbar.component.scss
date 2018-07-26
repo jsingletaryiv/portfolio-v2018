@@ -1,15 +1,4 @@
-/* Custom styles and/or AMC overrides.*/
-.app-navbar h1  {
-    font-family: 'Unica One', normal;
-    // font-size: 5rem;
-    // color: #fff;
-    // text-shadow: 2px 2px 2px #333;
-
-    .app-title {
-        margin-left: 4px;
-    }
-}
-
+// Custom styles and/or AMC overrides
 .app-is-mobile .app-navbar {
     // Create Sticky Navbar
     display: -webkit-box;
@@ -21,14 +10,31 @@
     flex-direction: column;
 }
 
+.app-navbar h1  {
+    font-family: 'Unica One', normal;
+    // font-size: 5rem;
+    // color: #fff;
+    // text-shadow: 2px 2px 2px #333;
+
+    .app-title {
+        margin-left: 4px;
+    }
+}
+
 .app-navbar-spacer {
-    /* This fills the remaining space, by using flexbox. 
-       Every toolbar row uses a flexbox row layout. */
+    // This fills the remaining space, by using flexbox. 
+    // Every toolbar row uses a flexbox row layout.
     flex: 1 1 auto;
+}
+
+.app-navbar-tooltip { // Look into previous tooltip issue
+    min-width: 100px;
 }
 
 .mat-button {
     font-family: 'Unica One', normal;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .mat-toolbar-multiple-rows {
