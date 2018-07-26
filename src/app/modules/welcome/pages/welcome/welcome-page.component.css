@@ -14,7 +14,7 @@ body {
 }
 
 header {
-  height: 40vh;
+  height: 45vh;
   width: 100vw;
   position: relative;
   -webkit-transform-style: inherit;
@@ -62,5 +62,7 @@ header * {
 
 header * h1, header * h2, header * h3, header * h4 {
   margin: 1rem;
+  font-family: 'Comfortaa', normal;
+  text-shadow: 1px 1px 1px #333;
 }
 /*# sourceMappingURL=welcome-page.component.css.map */

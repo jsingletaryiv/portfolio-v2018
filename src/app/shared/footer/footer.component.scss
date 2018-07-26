@@ -1,44 +1,105 @@
 /* Custom styles and/or AMC overrides.*/
-.app-footer {
-    position: relative;
+@import '../styles/flexbox-prefix';
 
-    .mat-toolbar-row, .mat-toolbar-single-row {
-        height: 90px;
+footer {
+    > div.app-footer-flex-container {
+        @include flexbox();
+        @include flexflow(column nowrap);
+
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        justify-content: flex-start;
+
+        // Row Top
+        > div.app-footer-row-top {
+            @include flexbox();
+            @include flexflow(row nowrap);
+
+            height: 175px;
+            padding: 0 16px;
+            align-items: center;
+            align-content: center;
+            justify-content: flex-start;
+    
+            section.app-footer-section-top {
+                @include flexbox();
+                @include flex(1 1 auto);
+
+                -webkit-box-pack: justify;
+                -ms-flex-pack: distribute;
+                justify-content: space-around;
+    
+                article {
+                    * {
+                        @include flex(1 1 100%);
+                    }
+
+                    h1, h2, h3, h4 {
+                        font-family: mat-font-family();
+                    }
+                }
+            }
+            
+            // section.app-footer-section-top:last-of-type {
+            //     -webkit-box-pack: end;
+            //     -ms-flex-pack: end;
+            //     justify-content: flex-end;
+            // }
+    
+            @include order(1);
+        }
+
+        // Row Bottom
+        > div.app-footer-row-bottom {
+            @include flexbox();
+            @include flexflow(row wrap);
+
+            align-items: center;
+            align-content: center;
+            justify-content: flex-start;
+
+            section.app-footer-section-bottom {
+                @include flexbox();
+                @include flex(1 1);
+
+                -webkit-box-pack: justify;
+                -ms-flex-pack: distribute;
+                justify-content: left;
+
+                article {
+                    * {
+                        @include flex(1 1 100%);
+                    }
+                    h1, h2, h3, h4 {
+                        font-family: mat-font-family();
+                    }
+                }
+            }
+            
+            // section.app-footer-section-bottom:last-of-type {
+            //     -webkit-box-pack: end;
+            //     -ms-flex-pack: end;
+            //     justify-content: flex-end;
+            // }
+
+            @include order(2);
+        }
     }
-}
 
-.app-footer-row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    padding: 0 8px;
-    width: 100%;
-}
+    .mat-toolbar-multiple-rows {
+        min-height: 50px;
+    }
 
-.app-footer-section-1 {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-}
+    .mat-toolbar-row, .mat-toolbar-single-row { 
+        @include flexflow(row nowrap);
+        @include flex(1 1);
 
-.app-footer-section-2 {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-}
+        height: 100px;
+        // width: 100%;
+        // flex-direction: row;
+        // align-items: center;
+        white-space: unset;
 
-.app-footer-section-3 {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+    }
 }

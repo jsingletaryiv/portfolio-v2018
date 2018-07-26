@@ -1,45 +1,121 @@
 /* Custom styles and/or AMC overrides.*/
-.app-footer {
-  position: relative;
-}
-
-.app-footer .mat-toolbar-row, .app-footer .mat-toolbar-single-row {
-  height: 90px;
-}
-
-.app-footer-row {
+footer > div.app-footer-flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: column nowrap;
+  -webkit-box-direction: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+footer > div.app-footer-flex-container > div.app-footer-row-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: row nowrap;
+  -webkit-box-direction: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  height: 175px;
+  padding: 0 16px;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-ordinal-group: 1;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+footer > div.app-footer-flex-container > div.app-footer-row-top section.app-footer-section-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+footer > div.app-footer-flex-container > div.app-footer-row-top section.app-footer-section-top article * {
+  -webkit-box-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+}
+
+footer > div.app-footer-flex-container > div.app-footer-row-top section.app-footer-section-top article h1, footer > div.app-footer-flex-container > div.app-footer-row-top section.app-footer-section-top article h2, footer > div.app-footer-flex-container > div.app-footer-row-top section.app-footer-section-top article h3, footer > div.app-footer-flex-container > div.app-footer-row-top section.app-footer-section-top article h4 {
+  font-family: mat-font-family();
+}
+
+footer > div.app-footer-flex-container > div.app-footer-row-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: row wrap;
+  -webkit-box-direction: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  padding: 0 8px;
-  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 2;
+  order: 2;
 }
 
-.app-footer-section-1 {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+footer > div.app-footer-flex-container > div.app-footer-row-bottom section.app-footer-section-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1 1;
+  -ms-flex: 1 1;
+  flex: 1 1;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: distribute;
+  justify-content: left;
 }
 
-.app-footer-section-2 {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+footer > div.app-footer-flex-container > div.app-footer-row-bottom section.app-footer-section-bottom article * {
+  -webkit-box-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
 }
 
-.app-footer-section-3 {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+footer > div.app-footer-flex-container > div.app-footer-row-bottom section.app-footer-section-bottom article h1, footer > div.app-footer-flex-container > div.app-footer-row-bottom section.app-footer-section-bottom article h2, footer > div.app-footer-flex-container > div.app-footer-row-bottom section.app-footer-section-bottom article h3, footer > div.app-footer-flex-container > div.app-footer-row-bottom section.app-footer-section-bottom article h4 {
+  font-family: mat-font-family();
+}
+
+footer .mat-toolbar-multiple-rows {
+  min-height: 50px;
+}
+
+footer .mat-toolbar-row, footer .mat-toolbar-single-row {
+  -webkit-box-orient: row nowrap;
+  -webkit-box-direction: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-flex: 1 1;
+  -ms-flex: 1 1;
+  flex: 1 1;
+  height: 100px;
+  white-space: unset;
 }
 /*# sourceMappingURL=footer.component.css.map */
