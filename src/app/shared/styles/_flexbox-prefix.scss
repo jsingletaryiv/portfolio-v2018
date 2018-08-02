@@ -1,5 +1,5 @@
-// Dedicated (.scss) file that will serve up @mixins while facilitating flexbox properties
-// Container Mixins
+// Partial for setting cross-browser flexbox properties
+// Flexbox Container
 @mixin flexbox() {
     display: -webkit-box;
     display: -moz-box;
@@ -8,7 +8,7 @@
     display: flex;
 }
 
-// Item Mixins
+// Flexbox Item
 @mixin flexflow($props) {
     -webkit-box-orient: $props;
     -webkit-box-direction: $props;

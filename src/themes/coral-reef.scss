@@ -16,8 +16,8 @@ $type-section-config: mat-typography-config(
     $font-family:   'Lato, normal',
     $subheading-2:  mat-typography-level(16px, 28px, 400),
     $subheading-1:  mat-typography-level(15px, 24px, 400),
-    $body-2:        mat-typography-level(14px, 24px, 400),
-    $body-1:        mat-typography-level(12px, 22px, 300),
+    $body-2:        mat-typography-level(15px, 24px, 400),
+    $body-1:        mat-typography-level(14px, 22px, 300),
     $caption:       mat-typography-level(12px, 20px, 300),
     $button:        mat-typography-level(14px, 14px, 400),
     /* Line-height must be unit-less fraction of the font-size */
@@ -40,7 +40,7 @@ $type-section-config: mat-typography-config(
 
 .app-section-config p,
 .app-section-config span {
-    font-family:    mat-font-family($type-header-config);
+    font-family:    mat-font-family($type-section-config);
     font-size:      mat-font-size($type-section-config, body-1);
     font-weight:    mat-font-weight($type-section-config, body-1);
     line-height:    mat-line-height($type-section-config, body-1);
@@ -48,11 +48,9 @@ $type-section-config: mat-typography-config(
 
 .app-footer-config {
     font-family:    mat-font-family($type-section-config);
-    font-size:      mat-font-size($type-section-config, subheading-1);
-    font-weight:    mat-font-weight($type-section-config, subheading-1);
-    line-height:    mat-line-height($type-section-config, subheading-1);
-
-    // @include mat-typography-level-to-styles($font-size, $font-weight, $line-height, $font-family);
+    font-size:      mat-font-size($type-section-config, body-1);
+    font-weight:    mat-font-weight($type-section-config, body-1);
+    line-height:    mat-line-height($type-section-config, body-1);
 }
 
 // Include the common styles for Angular Material.
@@ -61,7 +59,7 @@ $type-section-config: mat-typography-config(
 // Set primary, accent, and warn palettes.
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // For each palette, you can optionally specify a default, lighter, and darker hue.
-$app-theme-primary: mat-palette($mat-blue);
+$app-theme-primary: mat-palette($mat-blue, 700, 400, 900);
 // $app-theme-accent:  mat-palette($mat-blue-grey, A400, A200, A700);
 $app-theme-accent:  mat-palette($mat-light-green);
 $app-theme-warn:    mat-palette($mat-deep-orange);
@@ -70,6 +68,42 @@ $app-theme:         mat-dark-theme($app-theme-primary, $app-theme-accent, $app-t
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component that you are using.
+.set-bkgd-primary {
+    background-color: mat-color($app-theme-primary);
+}
+
+.set-bkgd-accent {
+    background-color: mat-color($app-theme-accent);
+}
+
+.set-bkgd-warn {
+    background-color: mat-color($app-theme-warn);
+}
+
+.set-bkgd-color {
+    // $props ($palette, $hue: default, $opacity: null)
+    background-color: mat-color($app-theme-primary);
+}
+
+.section-one {
+    // $props ($palette, $hue: default, $opacity: null)
+    background-color: mat-color($mat-blue-grey, 700, 1);
+}
+
+.section-two {
+    // $props ($palette, $hue: default, $opacity: null)
+    background-color: mat-color($mat-blue-grey, 700, .75);
+}
+
+.section-three {
+    // $props ($palette, $hue: default, $opacity: null)
+    background-color: mat-color($mat-blue-grey, 700, .5);
+}
+
+.section-four {
+    // $props ($palette, $hue: default, $opacity: null)
+    background-color: mat-color($mat-blue-grey, 700, .25);
+}
 
 // TODO:: Move these material design palette overrides to a dedicated file.
 $primary-color-dark:   #1565c0;

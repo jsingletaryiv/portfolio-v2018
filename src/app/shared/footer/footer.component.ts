@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  // TODO:: move redundant content into a `shared.utils` component
+  myName = 'James Singletary IV';
+  mySlogan = 'Forging Concepts into Creation ::';
+  myCopyright = 'Copyright 2018 - All Rights Reserved';
+
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }

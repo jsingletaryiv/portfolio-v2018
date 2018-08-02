@@ -1,71 +1,95 @@
 <!-- Custom Footer - Leveraging AMC toolbar (mat-toolbar) component -->
 <footer>
   <div class="app-footer-flex-container">
-    <!-- Row 1 -->
+
+    <!-- Top Row -->
     <div class="app-footer-row-top">
-      <!-- <mat-toolbar color="accent"> -->
-        <!-- Section 1 -->
-        <section class="app-footer-section-top">
-          <article>
-            <span class="mat-body-2">Section 1</span>
-          </article>
-        </section>
-        <!-- Section 2 -->
-        <section class="app-footer-section-top">
-          <article>
-            <span class="mat-body-2">Section 2</span>
-          </article>
-        </section>
-        <!-- Section 3 -->
-        <section class="app-footer-section-top">
-          <article>
-            <span class="mat-body-2">Section 3</span>
-          </article>
-        </section>
-        <!-- Section 4 -->
-        <section class="app-footer-section-top">
-          <article>
-            <span class="mat-body-2">Section 4</span>
-          </article>
-        </section>
-      <!-- </mat-toolbar> -->
+      <!-- Section 1 -->
+      <section class="app-footer-section-top section-one">
+        <article>
+          <div class="app-footer-icon-div">
+            <fa-icon [icon]="['fas', 'crown']" size="4x" transform="rotate-345 left-6 down-1"></fa-icon>
+          </div>
+          <div>
+            <span class="mat-body-1">JAMES SINGLETARY IV</span>
+          </div>
+        </article>
+      </section>
+      <!-- Section 2 -->
+      <section class="app-footer-section-top section-two">
+        <article>
+          <span class="mat-body-1">TECHNOLOGIES</span>
+        </article>
+      </section>
+      <!-- Section 3 -->
+      <section class="app-footer-section-top section-three">
+        <article>
+          <span class="mat-body-1">DOCUMENTS</span>
+        </article>
+      </section>
+      <!-- Section 4 -->
+      <section class="app-footer-section-top section-four">
+        <article>
+          <span class="mat-body-1">CONTACT</span>
+        </article>
+      </section>
     </div>
 
-    <!-- Row 2 -->
-    <div class="app-footer-row-bottom">
-      <mat-toolbar color="primary">
-        <!-- Section 1 -->
-        <section class="app-footer-section-bottom">
-          <article>
-            <span class="mat-body-1">
-              Forging Projects - Concepts to Creations: 
-            </span>
-            <br>
-            <span class="mat-body-1">
-              James Singletary IV
-              &copy; Copyright 2018
-            </span>
-          </article>
-        </section>
-        <!-- Section 2 -->
-        <section class="app-footer-section-bottom">
-          <article>
-            <span class="mat-body-1">Footer 2</span>
-          </article>
-        </section>
-        <!-- Section 3 -->
-        <section class="app-footer-section-bottom">
-          <article>
-            <span class="mat-body-1">Footer 3</span>
-          </article>
-        </section>
-        <!-- Section 4 -->
-        <section class="app-footer-section-bottom">
-          <article>
-            <span class="mat-body-1">Footer 4</span>
-          </article>
-        </section>
-      </mat-toolbar>
+    <!-- Bottom Row -->
+    <div class="app-footer-row-bottom set-bkgd-primary mat-elevation-z12">
+      <!-- Section 1 -->
+      <section class="app-footer-section-bottom">
+        <article>
+          <span class="app-footer-article-header">
+            {{ mySlogan | uppercase }}
+          </span>
+          <span class="app-footer-article-span">
+            {{ myName }}
+          </span>
+          <span class="app-footer-article-span">
+            &copy; {{ myCopyright }}
+          </span>
+        </article>
+      </section>
+      <!-- Section 2 -->
+      <section class="app-footer-section-bottom">
+        <article>
+          <span class="app-footer-article-header">
+            AREAS OF INTEREST ::
+          </span>
+          <span class="app-footer-article-span">
+            Writing clean, efficient, and reusable code for each project.
+          </span>
+        </article>
+      </section>
+      <!-- Section 3 -->
+      <section class="app-footer-section-bottom">
+        <article>
+          <span class="app-footer-article-header">
+            PERSONAL DETAILS &amp; INFORMATION ::
+          </span>
+          <span class="app-footer-article-span">
+            Don't forget to grab a copy of my resume before you go! 
+          </span>
+        </article>
+      </section>
+      <!-- Section 4 -->
+      <section class="app-footer-section-bottom">
+        <article>
+          <span class="app-footer-article-header">
+            LET'S CONNECT ::
+          </span>
+          <div class="app-footer-connect-icons">
+              <fa-icon [icon]="['fab', 'google-plus-square']" size="lg"></fa-icon>
+              <fa-icon [icon]="['fab', 'instagram']" size="lg"></fa-icon>
+              <fa-icon [icon]="['fab', 'linkedin']" size="lg"></fa-icon>
+              <fa-icon [icon]="['fab', 'stack-overflow']" size="lg"></fa-icon>
+              <fa-icon [icon]="['fab', 'twitter-square']" size="lg"></fa-icon>
+          </div>
+        </article>
+      </section>
     </div>
+
   </div>
+
 </footer>
