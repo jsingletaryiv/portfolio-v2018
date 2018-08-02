@@ -87,22 +87,22 @@ $app-theme:         mat-dark-theme($app-theme-primary, $app-theme-accent, $app-t
 
 .section-one {
     // $props ($palette, $hue: default, $opacity: null)
-    background-color: mat-color($mat-blue-grey, 700, 1);
+    background-color: mat-color($mat-blue, 700, 1);
 }
 
 .section-two {
     // $props ($palette, $hue: default, $opacity: null)
-    background-color: mat-color($mat-blue-grey, 700, .75);
+    background-color: mat-color($mat-blue, 700, .75);
 }
 
 .section-three {
     // $props ($palette, $hue: default, $opacity: null)
-    background-color: mat-color($mat-blue-grey, 700, .5);
+    background-color: mat-color($mat-blue, 700, .5);
 }
 
 .section-four {
     // $props ($palette, $hue: default, $opacity: null)
-    background-color: mat-color($mat-blue-grey, 700, .25);
+    background-color: mat-color($mat-blue, 700, .25);
 }
 
 // TODO:: Move these material design palette overrides to a dedicated file.
