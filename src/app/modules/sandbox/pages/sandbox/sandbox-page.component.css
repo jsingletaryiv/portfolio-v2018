@@ -10,7 +10,6 @@ body {
           perspective: 20rem;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  font-family: 'Lato', normal;
 }
 
 header {
@@ -49,8 +48,8 @@ header::before {
   background-repeat: no-repeat;
   -webkit-transform-origin: center center 0;
           transform-origin: center center 0;
-  -webkit-transform: scale(2) translate(0, -50px);
-  transform: scale(2) translate(0, -50px);
+  -webkit-transform: scale(2) translate(0, -80px);
+  transform: scale(2) translate(0, -80px);
   z-index: -1;
 }
 
