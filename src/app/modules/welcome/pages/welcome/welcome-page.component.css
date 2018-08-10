@@ -10,7 +10,6 @@ body {
           perspective: 20rem;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  font-family: 'Lato', normal;
 }
 
 header {
@@ -54,15 +53,20 @@ header::before {
   z-index: -1;
 }
 
-header * {
-  letter-spacing: .3rem;
+header > * {
+  letter-spacing: .2rem;
   text-align: left;
   margin: 0;
 }
 
-header * h1, header * h2, header * h3, header * h4 {
+header > * h1, header > * h2, header > * h3, header > * h4 {
   margin: 1rem;
   font-family: 'Comfortaa', normal;
   text-shadow: 1px 1px 1px #333;
+}
+
+header > * ~ span {
+  letter-spacing: 0;
+  margin-left: -10px;
 }
 /*# sourceMappingURL=welcome-page.component.css.map */

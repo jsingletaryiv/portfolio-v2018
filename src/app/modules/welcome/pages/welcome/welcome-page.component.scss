@@ -1,3 +1,4 @@
+// @import '../../../../shared/styles/flexbox-prefix';
 // Parallax
 /* TODO:: Generate dedicated component for header feature...
 Move all markup and styles needed for Parallax */
@@ -9,7 +10,6 @@ body {
     overflow-x: hidden;
     perspective: 20rem;
     transform-style: preserve-3d;
-    font-family: 'Lato', normal;
 }
 
 header {
@@ -57,9 +57,9 @@ header::before {
     z-index: -1;
 }
 
-header * {
+header > * {
     // font-weight: normal;
-    letter-spacing: .3rem;
+    letter-spacing: .2rem;
     text-align: left;
     margin: 0;
 
@@ -68,4 +68,14 @@ header * {
         font-family: 'Comfortaa', normal;
         text-shadow: 1px 1px 1px #333;
     }
+
+    ~ span {
+        letter-spacing: 0;
+        margin-left: -10px;
+    }
 }
+
+// Welcome-Page Styles // ---------------->
+// div[role="welcome-text"] {
+//     text-align: right;
+// }

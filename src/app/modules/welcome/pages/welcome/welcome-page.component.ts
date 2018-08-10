@@ -8,13 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class WelcomePageComponent implements OnInit {
 
   // Page Header
-  pageTitle = 'James Singletary IV';
-  pageSubTitle = 'Senior Application / Software / UI/UX Developer';
+  // pageTitle = 'Welcome';
+  pageSubTitle = 'Senior Application / UI/UX Developer';
+  // pageSubTitle = 'Since MCMXCVIII';
 
   // Section 1
-  section1Title = 'Welcome to my tiny imprint on the internet...';
+  section1Title = 'Forging Concepts into Creation //';
   section1Text = '';
-  missionTitle = 'Mission Statement:';
+  missionTitle = 'Mission Statement //';
   missionText = '';
 
   constructor() { }
