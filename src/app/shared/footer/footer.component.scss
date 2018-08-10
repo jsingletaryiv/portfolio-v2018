@@ -22,7 +22,7 @@ footer {
             align-items: stretch;
             align-content: center;
             justify-content: flex-start;
-    
+
             section.app-footer-section-top {
                 @include flexbox();
                 @include flex(1);
@@ -36,7 +36,7 @@ footer {
 
                     ~ * {
                         @include flexflow(column nowrap);
-                        @include flex(1 1 100%);
+                        @include flex(1 1 auto);
                     }
                     div.app-footer-icon-div {
                         text-align: left;
@@ -59,15 +59,15 @@ footer {
             @include flexbox();
             @include flexflow(row nowrap);
 
-            height: 100px;
-            padding: 15px 0;
+            height: 90px;
+            padding: 15px 0 10px 0;
             align-items: flex-start;
             align-content: flex-start;
             justify-content: flex-start;
 
             section.app-footer-section-bottom {
                 @include flexbox();
-                @include flex(1 1);
+                @include flex(1);
 
                 -webkit-box-pack: justify;
                 -ms-flex-pack: distribute;
@@ -75,12 +75,12 @@ footer {
 
                 article {
                     @include flexbox();
-                    @include flexflow(column wrap);
+                    @include flexflow(column nowrap);
 
                     padding: 0 10px;
 
                     ~ * {
-                        @include flex(1 1 100%);
+                        @include flex(1);
                     }
                     h1, h2, h3, h4 {
                         font-family: mat-font-family();
@@ -92,9 +92,9 @@ footer {
                         padding-bottom: 10px;
                     }
                     span.app-footer-article-span {
-                        font-family: 'Lato', Helvetica, Helvetica Neue, Arial, sans-serif;
+                        font-family: 'Montserrat', Helvetica, Helvetica Neue, Arial, sans-serif;
                         font-size: 12px;
-                        font-weight: 200;
+                        font-weight: 300;
                         line-height: 18px;
                     }
                 }
@@ -112,11 +112,11 @@ footer {
                 }
 
                 // TODO:: Confirm style is being applied to `<fa-icon>` elements 
-                div.app-footer-connect-icons {
-                    .ng-fa-icon > .svg-inline--fa.fa-w-14 {
-                        width: 1.2em;
-                    }
-                }
+                // div.app-footer-connect-icons {
+                //     .ng-fa-icon > .svg-inline--fa.fa-w-14 {
+                //         width: 1.2em;
+                //     }
+                // }
             }
 
             @include order(2);

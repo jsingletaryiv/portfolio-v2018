@@ -59,9 +59,9 @@ footer > div.app-footer-flex-container > div.app-footer-row-top section.app-foot
   -webkit-box-direction: column nowrap;
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
-  -webkit-box-flex: 1 1 100%;
-  -ms-flex: 1 1 100%;
-  flex: 1 1 100%;
+  -webkit-box-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 footer > div.app-footer-flex-container > div.app-footer-row-top section.app-footer-section-top article div.app-footer-icon-div {
@@ -80,8 +80,8 @@ footer > div.app-footer-flex-container > div.app-footer-row-bottom {
   -webkit-box-direction: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
-  height: 100px;
-  padding: 15px 0 15px 0;
+  height: 90px;
+  padding: 15px 0 10px 0;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -99,9 +99,9 @@ footer > div.app-footer-flex-container > div.app-footer-row-bottom section.app-f
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1 1;
-  -ms-flex: 1 1;
-  flex: 1 1;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   -webkit-box-pack: justify;
   -ms-flex-pack: distribute;
   justify-content: flex-start;
@@ -111,17 +111,17 @@ footer > div.app-footer-flex-container > div.app-footer-row-bottom section.app-f
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: column wrap;
-  -webkit-box-direction: column wrap;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
+  -webkit-box-orient: column nowrap;
+  -webkit-box-direction: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
   padding: 0 10px;
 }
 
 footer > div.app-footer-flex-container > div.app-footer-row-bottom section.app-footer-section-bottom article ~ * {
-  -webkit-box-flex: 1 1 100%;
-  -ms-flex: 1 1 100%;
-  flex: 1 1 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 footer > div.app-footer-flex-container > div.app-footer-row-bottom section.app-footer-section-bottom article h1, footer > div.app-footer-flex-container > div.app-footer-row-bottom section.app-footer-section-bottom article h2, footer > div.app-footer-flex-container > div.app-footer-row-bottom section.app-footer-section-bottom article h3, footer > div.app-footer-flex-container > div.app-footer-row-bottom section.app-footer-section-bottom article h4 {
@@ -129,14 +129,14 @@ footer > div.app-footer-flex-container > div.app-footer-row-bottom section.app-f
 }
 
 footer > div.app-footer-flex-container > div.app-footer-row-bottom section.app-footer-section-bottom article span.app-footer-article-header {
-  font-family: 'Unica One', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: 'Unica One', Helvetica, Helvetica Neue, Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   padding-bottom: 10px;
 }
 
 footer > div.app-footer-flex-container > div.app-footer-row-bottom section.app-footer-section-bottom article span.app-footer-article-span {
-  font-family: 'Helvetica', Helvetica Neue, Arial, sans-serif;
+  font-family: 'Montserrat', Helvetica, Helvetica Neue, Arial, sans-serif;
   font-size: 12px;
   font-weight: 300;
   line-height: 18px;
@@ -157,9 +157,5 @@ footer > div.app-footer-flex-container > div.app-footer-row-bottom section.app-f
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-}
-
-footer > div.app-footer-flex-container > div.app-footer-row-bottom section.app-footer-section-bottom:last-child div.app-footer-connect-icons ~ fa-icon {
-  padding: 8px;
 }
 /*# sourceMappingURL=footer.component.css.map */
