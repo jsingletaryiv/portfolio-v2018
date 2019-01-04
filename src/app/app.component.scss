@@ -1,4 +1,29 @@
+@import './shared/styles/flexbox-prefix';
 /* Custom styles and/or MDC overrides.*/
+
+// app-root {
+//     @include flexbox();
+//     @include flexflow(column nowrap);
+// }
+
+app-root > app-about, 
+app-root > app-contact, 
+app-root > app-projects, 
+app-root > app-sandbox, 
+app-root > app-welcome  {
+    // @include flex(1);
+
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+// & > * {
+//     @include flex(1)
+// }
+
 .app-is-mobile {
     /* Sticky Menu - Ensures the toolbar will stay on top of the content as it scrolls the y-axis. */
     position: fixed;

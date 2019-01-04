@@ -1,4 +1,13 @@
 // Custom styles and/or AMC overrides
+:host {
+    // Create Sticky Navbar
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
 .app-is-mobile .app-navbar {
     // Create Sticky Navbar
     display: -webkit-box;

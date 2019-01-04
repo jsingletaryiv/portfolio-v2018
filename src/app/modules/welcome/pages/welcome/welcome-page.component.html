@@ -1,91 +1,111 @@
-<!-- Page Header -->
-<!-- TODO:: Generate component for header feature -->
-<header class="app-header-config">
-  <div class="app-header-content">
-    <!-- <h1 class="mat-display-1">{{ welcomeMsg | uppercase }}</h1> -->
-    <h2 class="mat-headline">
-      <span>&#62;</span>
-      <span class="app-cursor-blink">&#95;</span>
-      {{ pageSubTitle | uppercase }}
-    </h2>
-    <mat-divider></mat-divider>
-  </div>
-</header>
-
-<!-- Section One -->
-<section class="app-section-config app-section-container app-section-one">
-  <article class="app-article-item">
-    <!-- <h1 class="mat-headline">{{ section1Title | uppercase }}</h1> -->
-    <!-- <mat-divider></mat-divider> -->
-    <div class="app-div-item">
-      <h1 class="mat-headline">
-        Hi! My name is James and welcome to my small corner of cosmic <q>cyber-space</q> dust!
-        A Full-Stack Developer specializing in serving-up Big Data with Cloud-Based Software &amp; Web
-        Applications!
-      </h1>
+<div class="app-page-wrapper" [ngClass]="{ 'app-theme-dark': isDarkTheme | async }">
+  <!-- Page Header -->
+  <!-- TODO:: Generate component for header feature -->
+  <header class="app-header-config">
+    <div class="app-header-content">
+      <!-- <h1 class="mat-display-1">{{ welcomeMsg | uppercase }}</h1> -->
+      <h2 class="mat-headline">
+        <span>&#62;</span>
+        <span class="app-cursor-blink">&#95;</span>
+        {{ pageSubTitle | uppercase }}
+      </h2>
+      <mat-divider></mat-divider>
     </div>
-  </article>
-
-  <article class="app-article-item">
-    <div class="app-div-item">
-      <p>
-        I have always had a strong passion for building intuitive, real-world solutions that provide a positive
-        impact to it's users &amp; visitors alike.
-      </p>
-      <p>
-        With over 15 years of professional experience, I'm fortunate enough to have worked on a myriad of projects
-        ranging from various bands, musicians &amp; small-businesses to enterprise-level corporations.
-      </p>
-    </div>
-    <!-- TODO: Generate quotes.component using code below  -->
-    <!-- <div>
-      <div class="page-content-card accent">
-        <h1 class="mat-headline">Motivational Fodder:</h1>
-        <p class="mat-body-1">
-          Collaborating with like-minded developers who are as excited about Web Design &amp; Development as I am!
+  </header>
+  
+  <!-- Section One -->
+  <section class="app-section-config app-section-container app-section-one">
+    <article class="app-article-item">
+      <!-- <h1 class="mat-headline">{{ section1Title | uppercase }}</h1> -->
+      <!-- <mat-divider></mat-divider> -->
+      <div class="app-div-item">
+        <h1 class="mat-headline">
+          Hi! My name is James and welcome to my small corner of cosmic <q>cyber-space</q> dust!
+          A Full-Stack Developer specializing in serving-up Big Data with Cloud-Based Software &amp; Web
+          Applications!
+        </h1>
+      </div>
+    </article>
+  
+    <article class="app-article-item">
+      <div class="app-div-item">
+        <p>
+          I have always had a strong passion for building intuitive, real-world solutions that provide a positive
+          impact to it's users &amp; visitors alike.
+        </p>
+        <p>
+          With over 15 years of professional experience, I'm fortunate enough to have worked on a myriad of projects
+          ranging from various bands, musicians &amp; small-businesses to enterprise-level corporations.
         </p>
       </div>
-    </div> -->
-  </article>
-
-</section>
-
-<mat-divider></mat-divider>
-
-<!-- Section Two -->
-<section class="app-section-config app-section-container app-section-two">
-  <article class="app-article-item">
-    <div class="app-div-item">
-      <!-- Leveraging Ng-Material base / minimum styles -->
-      <mat-card class="app-card-content">
-        <mat-card-header>
-          <mat-card-title>
-            <h1 class="mat-title">{{ missionTitle | uppercase }}</h1>
-          </mat-card-title>
-          <mat-card-subtitle>
-            <mat-divider></mat-divider>
-          </mat-card-subtitle>
-        </mat-card-header>
-        
-        <mat-card-content>
+      <!-- TODO: Generate quotes.component using code below  -->
+      <!-- <div>
+        <div class="page-content-card accent">
+          <h1 class="mat-headline">Motivational Fodder:</h1>
           <p class="mat-body-1">
-            To establish myself as a valuable asset by writing clean, efficient, yet reusable code to create applications that have a positive impact on its
-            users while increasing / streamlining productivity within any given industry. Always holding myself and my skill set to a higher standard. Building
-            out intuitive interfaces by means of the latest industry methods &amp; standards. Never being afraid to acknowledge and learn new up-and-coming
-            technologies / methodologies that can be applied when creating innovative real world solutions.
+            Collaborating with like-minded developers who are as excited about Web Design &amp; Development as I am!
           </p>
-        </mat-card-content>
+        </div>
+      </div> -->
+    </article>
+  
+  </section>
+  
+  <mat-divider></mat-divider>
+  
+  <!-- Section Two -->
+  <section class="app-section-config app-section-container app-section-two">
+    <article class="app-article-item">
+      <div class="app-div-item">
+        <!-- TODO:: Generate `app-content-viewer-iso` as shared component -->
+        <div class="app-content-viewer-iso">
+          <div class="app-content-viewer-iso-container">
+            <div class="app-content-viewer-iso-title">
+              <div class="app-content-viewer-iso-title-spacer">
+                <h1 class="mat-title">{{ missionTitle | uppercase }}</h1>
+              </div>
+            </div>
+            <div class="app-content-viewer-iso-body">
+              <p class="mat-body-1">
+                To establish myself as a valuable asset by writing clean, efficient, yet reusable code to create applications that have a positive impact on its
+                users while increasing / streamlining productivity within any given industry. Always holding myself and my skill set to a higher standard. Building
+                out intuitive interfaces by means of the latest industry methods &amp; standards. Never being afraid to acknowledge and learn new up-and-coming
+                technologies / methodologies that can be applied when creating innovative real world solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Leveraging ng-material base / min styles -->
+        <mat-card class="app-card-content">
+          <mat-card-header>
+            <mat-card-title>
+              <h1 class="mat-title">{{ missionTitle | uppercase }}</h1>
+            </mat-card-title>
+            <mat-card-subtitle>
+              <mat-divider></mat-divider>
+            </mat-card-subtitle>
+          </mat-card-header>
+          
+          <mat-card-content>
+            <p class="mat-body-1">
+              To establish myself as a valuable asset by writing clean, efficient, yet reusable code to create applications that have a positive impact on its
+              users while increasing / streamlining productivity within any given industry. Always holding myself and my skill set to a higher standard. Building
+              out intuitive interfaces by means of the latest industry methods &amp; standards. Never being afraid to acknowledge and learn new up-and-coming
+              technologies / methodologies that can be applied when creating innovative real world solutions.
+            </p>
+          </mat-card-content>
+  
+        </mat-card>
+  
+      </div>
+  
+    </article>
+    <!-- Ad-Hoc -->
+    <div class="app-content-spacer"></div>
+  
+  </section>
+  <!-- Nested Footer Component -->
+  <app-footer></app-footer>
 
-      </mat-card>
-
-    </div>
-
-  </article>
-    
-  <!-- Ad-Hoc -->
-  <div class="app-content-spacer"></div>
-
-</section>
-
-<!-- Nest Footer Component -->
-<app-footer></app-footer>
+</div>

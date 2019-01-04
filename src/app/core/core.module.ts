@@ -6,6 +6,7 @@ import { CoreRoutingModule } from './core-routing.module';
 import { SharedModule } from '@app/shared';
 
 import { NavbarComponent } from './navbar/navbar.component';
+import { ThemeService } from '@app/core/services/theme.service';
 // TODO:: Generate a utils.module that will contain various
 // directives to help facilitate System / Admin requests
 import { environment } from '../../environments/environment';
@@ -20,11 +21,14 @@ import { environment } from '../../environments/environment';
   declarations: [
     NavbarComponent
   ],
+  providers: [
+    ThemeService
+  ],
   exports: [
+    CommonModule,
     CoreRoutingModule,
     NavbarComponent
-  ],
-  providers: []
+  ]
 })
 
 export class CoreModule {
@@ -37,6 +41,7 @@ export class CoreModule {
 
     if (parentModule) {
       throw new Error('CoreModule is already loaded. Import only in AppModule');
+
     } else {
       console.log('CoreModule Loaded!');
       console.log('App Version: v' + this.appVersion);
