@@ -1,9 +1,8 @@
 {
     "version": 3,
-    "mappings": "AACA,wCAAwC;AAOxC,AAAA,QAAQ,GAAG,SAAS;AACpB,QAAQ,GAAG,WAAW;AACtB,QAAQ,GAAG,YAAY;AACvB,QAAQ,GAAG,WAAW;AACtB,QAAQ,GAAG,WAAW,CAAE;EAGpB,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,IAAI;EACT,MAAM,EAAE,CAAC;EACT,IAAI,EAAE,CAAC;EACP,KAAK,EAAE,CACX;CAAC;;AAMD,AAAA,cAAc,CAAC;EACX,iGAAiG;EACjG,QAAQ,EAAE,KAAK;EACf,OAAO,EAAE,CAAC;CACb",
+    "mappings": "AAAA,wCAAwC;AACxC,AAAA,cAAc,CAAC;EACX,iGAAiG;EACjG,QAAQ,EAAE,KAAK;EACf,OAAO,EAAE,CAAC;CACb",
     "sources": [
-        "app.component.scss",
-        "shared/styles/_flexbox-prefix.scss"
+        "app.component.scss"
     ],
     "names": [],
     "file": "app.component.css"

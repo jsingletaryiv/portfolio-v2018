@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ThemeService } from '@app/core/services/theme.service';
 
-import { Observable } from 'rxjs/Observable';
 @Component({
   selector: 'app-welcome',
   templateUrl: './welcome-page.component.html',
@@ -20,18 +18,9 @@ export class WelcomePageComponent implements OnInit {
   missionTitle = 'Mission Statement //';
   missionText = '';
 
-  isDarkTheme: Observable<boolean>;
-
-  constructor(private themeService: ThemeService) { }
+  constructor() { }
 
   ngOnInit() {
-
-    this.isDarkTheme = this.themeService.isDarkTheme;
+    // Init welcome page here...
   }
-
-  toggleDarkTheme(checked: boolean) {
-
-    this.themeService.setDarkTheme(checked);
-  }
-
 }

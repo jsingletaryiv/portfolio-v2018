@@ -1,5 +1,17 @@
 /* TODO:: Generate dedicated component for header feature...
 Move all markup and styles needed for Parallax */
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-perspective: 20rem;
+          perspective: 20rem;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
 header {
   height: 45vh;
   width: 100vw;
@@ -8,13 +20,13 @@ header {
           transform-style: inherit;
 }
 
-header > div.app-header-content {
+header .app-header-content {
   position: relative;
   padding: 20vh 5vw 5vh 5vw;
   z-index: -1;
 }
 
-header > div.app-header-content h1, header > div.app-header-content h2, header > div.app-header-content h3, header > div.app-header-content h4 {
+header .app-header-content h1, header .app-header-content h2, header .app-header-content h3, header .app-header-content h4 {
   font-family: 'Comfortaa', normal;
   text-shadow: 2px 2px 2px #333;
 }
@@ -28,6 +40,7 @@ header::before {
   left: 0;
   content: "";
   display: block;
+  background-color: #212121;
   background-image: url("../../../../../assets/images/welcome-header.jpg");
   background-position: top center;
   background-size: auto 600px;
@@ -52,151 +65,8 @@ header > * h1, header > * h2, header > * h3, header > * h4 {
   text-shadow: 1px 1px 1px #333;
 }
 
-header > * span {
+header > * ~ span {
   letter-spacing: 0;
   margin-left: -10px;
-}
-
-div.app-page-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: column nowrap;
-  -webkit-box-direction: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-div.app-page-wrapper h1, div.app-page-wrapper h2, div.app-page-wrapper h3, div.app-page-wrapper h4 {
-  font-family: 'Comfortaa', Helvetica Neue, Helvetica, Arial, sans-serif;
-  margin: 0;
-}
-
-div.app-page-wrapper section.app-section-container {
-  -webkit-box-orient: row nowrap;
-  -webkit-box-direction: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin: 0;
-  padding: 5vh 18vw;
-  list-style: none;
-  background-color: #fff;
-  width: 100%;
-  z-index: 2;
-}
-
-div.app-page-wrapper section.app-section-container p {
-  margin-bottom: 2em;
-}
-
-div.app-page-wrapper section.app-section-container p:last-child {
-  margin-bottom: 0;
-}
-
-div.app-page-wrapper section.app-section-container small {
-  font-size: .8rem;
-}
-
-div.app-page-wrapper section.app-section-container.app-section-one article.app-article-item:nth-child(1) {
-  -webkit-box-flex: 1 0 60%;
-  -ms-flex: 1 0 60%;
-  flex: 1 0 60%;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  border-right: 1px solid rgba(255, 255, 255, 0.12);
-  padding: 1em 1.5em;
-}
-
-div.app-page-wrapper section.app-section-container.app-section-one article.app-article-item:nth-child(1) div.app-div-item:nth-child(1) {
-  text-align: end;
-}
-
-div.app-page-wrapper section.app-section-container.app-section-one article.app-article-item:nth-child(2) {
-  -webkit-box-flex: 1 0 40%;
-  -ms-flex: 1 0 40%;
-  flex: 1 0 40%;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  line-height: 1.7rem;
-  padding: 1em 1.5em;
-}
-
-div.app-page-wrapper section.app-section-container.app-section-one article.app-article-item:nth-child(2) div.app-div-item {
-  display: block;
-  width: 100%;
-}
-
-div.app-page-wrapper section.app-section-container.app-section-two .app-card-content {
-  min-height: 20px;
-  padding: 15px;
-  margin-bottom: 15px;
-  border: 1px solid transparent;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  -ms-box-shadow: none;
-  box-shadow: none;
-}
-
-div.app-page-wrapper section.app-section-container.app-section-two .app-card-content .mat-card-header > .mat-card-header-text {
-  margin: 0 0 15px 0;
-}
-
-div.app-page-wrapper section.app-section-container .app-content-spacer {
-  height: 500px;
-}
-
-.app-content-viewer-iso {
-  display: block;
-  padding: 20px 0;
-}
-
-.app-content-viewer-iso .app-content-viewer-iso-container {
-  border: 1px solid rgba(0, 0, 0, 0.03);
-  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24), 0 0 2px rgba(0, 0, 0, 0.12);
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24), 0 0 2px rgba(0, 0, 0, 0.12);
-  margin: 4px;
-}
-
-.app-content-viewer-iso .app-content-viewer-iso-container h1, .app-content-viewer-iso .app-content-viewer-iso-container h2, .app-content-viewer-iso .app-content-viewer-iso-container h3, .app-content-viewer-iso .app-content-viewer-iso-container h4 {
-  margin-top: 10px;
-}
-
-.app-content-viewer-iso .app-content-viewer-iso-container .app-content-viewer-iso-title {
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 8px 20px;
-}
-
-.app-content-viewer-iso .app-content-viewer-iso-container .app-content-viewer-iso-title-spacer {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.app-content-viewer-iso .app-content-viewer-iso-container .app-content-viewer-iso-body {
-  padding: 30px;
 }
 /*# sourceMappingURL=welcome-page.component.css.map */

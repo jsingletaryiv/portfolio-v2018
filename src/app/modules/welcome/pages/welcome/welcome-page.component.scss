@@ -1,15 +1,26 @@
-@import '../../../../shared/styles/flexbox-prefix';
+// @import '../../../../shared/styles/flexbox-prefix';
 // Parallax
 /* TODO:: Generate dedicated component for header feature...
 Move all markup and styles needed for Parallax */
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    perspective: 20rem;
+    transform-style: preserve-3d;
+}
+
 header {
     height: 45vh;
     width: 100vw;
     position: relative;
-    transform-style: inherit
+    transform-style: inherit;
+    // padding: 5vh;
 }
 
-header > div.app-header-content {
+header .app-header-content {
     // width: 100%;
     // top: 50%;
     position: relative;
@@ -18,7 +29,7 @@ header > div.app-header-content {
 
     h1, h2, h3, h4 {
         font-family: 'Comfortaa', normal;
-        text-shadow: 2px 2px 2px #333
+        text-shadow: 2px 2px 2px #333;
     }
 }
 
@@ -31,7 +42,7 @@ header::before {
     left: 0;
     content: "";
     display: block;
-    // background-color: #212121;
+    background-color: #212121;
     background-image: url('../../../../../assets/images/welcome-header.jpg'); // Ad-Hoc
     background-position: top center;
     background-size: auto 600px;
@@ -43,7 +54,7 @@ header::before {
     -ms-transform:     scale(2) translate(0, -50px);
     -o-transform:      scale(2) translate(0, -50px);
     transform:         scale(2) translate(0, -50px);
-    z-index: -1
+    z-index: -1;
 }
 
 header > * {
@@ -55,142 +66,16 @@ header > * {
     h1, h2, h3, h4 {
         margin: 1rem;
         font-family: 'Comfortaa', normal;
-        text-shadow: 1px 1px 1px #333
+        text-shadow: 1px 1px 1px #333;
     }
 
-    span {
+    ~ span {
         letter-spacing: 0;
-        margin-left: -10px
+        margin-left: -10px;
     }
 }
 
-// Welcome-Page Styles // ---------------------->
-div.app-page-wrapper {
-    @include flexbox();
-    @include flexflow(column nowrap);
-
-    overflow-x: hidden;
-    overflow-y: auto;
-
-    h1, h2, h3, h4 {
-        font-family: 'Comfortaa', Helvetica Neue, Helvetica, Arial, sans-serif;
-        margin: 0;
-    }
-
-    section.app-section-container { 
-        @include flexflow(row nowrap);
-        @include flex(1);
-
-        justify-content: flex-start;
-        margin: 0;
-        padding: 5vh 18vw;
-        list-style: none;
-        background-color: #fff;
-        width: 100%;
-        z-index: 2;
-        
-        p { margin-bottom: 2em }
-        p:last-child { margin-bottom: 0 }
-        small { font-size: .8rem }
-
-        &.app-section-one {
-            article.app-article-item:nth-child(1) {
-                @include flex(1 0 60%);
-                
-                align-items: flex-start;
-                align-content: flex-start;
-                border-right: 1px solid rgba(255, 255, 255, 0.12);
-                padding: 1em 1.5em;
-                
-                div.app-div-item:nth-child(1) {
-                    text-align: end;
-                }
-            }
-            
-            article.app-article-item:nth-child(2) {
-                @include flex(1 0 40%);
-                
-                align-items: flex-start;
-                align-content: flex-start;
-                line-height: 1.7rem;
-                padding: 1em 1.5em;
-        
-                div.app-div-item {
-                    display: block;
-                    width: 100%;
-                }
-            }
-        }
-
-        &.app-section-two {
-            // Custom overrides for <mat-card> component
-            .app-card-content {
-                min-height: 20px;
-                padding: 15px;
-                margin-bottom: 15px;
-                border: 1px solid transparent;
-                border-radius: 0;
-    
-                -webkit-box-shadow: none;
-                -ms-box-shadow: none;
-                box-shadow: none;
-    
-                .mat-card-header > .mat-card-header-text {
-                    margin: 0 0 15px 0;
-                }
-            }
-        }
-
-        // TODO:: Remove Ad-Hoc class once live content is in place.
-        .app-content-spacer {
-            height: 500px;
-        }
-    }
-}
-
-// TODO:: Generate `app-content-viewer-iso` as shared component
-// NOTE:: This will be the component selector id
-.app-content-viewer-iso {
-    display: block;
-    padding: 20px 0;
-
-    .app-content-viewer-iso-container {
-        border: 1px solid rgba(0,0,0,.03);  
-        -webkit-box-shadow: 0 2px 2px rgba(0,0,0,.24),0 0 2px rgba(0,0,0,.12);
-        box-shadow: 0 2px 2px rgba(0,0,0,.24), 0 0 2px rgba(0,0,0,.12);
-        margin: 4px;
-
-        h1, h2, h3, h4 {
-            margin-top: 10px
-        }
-        
-        .app-content-viewer-iso-title {
-            // TODO:: Import/Include `flexbox-prefix` partial
-            -ms-flex-line-pack: center;
-            align-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            padding: 8px 20px;
-            // color:rgba(0,0,0,.54);
-            // background-color:rgba(0,0,0,.03);
-        }
-        
-        .app-content-viewer-iso-title-spacer {
-            // TODO:: Import/Include `flexbox-prefix` partial
-            -webkit-box-flex: 1;
-            -ms-flex: 1 1 auto;
-            flex: 1 1 auto
-        }
-        
-        .app-content-viewer-iso-body {
-            padding: 30px
-        }
-    }
-}
+// Welcome-Page Styles // ---------------->
+// div[role="welcome-text"] {
+//     text-align: right;
+// }
