@@ -9,7 +9,7 @@ export class WelcomePageComponent implements OnInit {
 
   // Page Header
   // pageTitle = 'Welcome';
-  pageSubTitle = 'Senior Application / UI/UX Developer';
+  pageSubTitle = 'Application / UI/UX Developer';
   // pageSubTitle = 'Since MCMXCVIII';
 
   // Section 1

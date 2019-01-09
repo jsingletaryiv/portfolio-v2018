@@ -76,7 +76,7 @@ app-root > app-welcome  {
 
         justify-content: flex-start;
         margin: 0;
-        padding: 5vh 20vw;
+        padding: 5vh 10%;
         list-style: none;
         background-color: #212121;
         width: 100%;
@@ -87,30 +87,54 @@ app-root > app-welcome  {
         small { font-size: .8rem; }
 
         &.app-section-one {
-            article.app-article-item:nth-child(1) {
-                @include flex(1 0 60%);
+            // NOTE: Using the Grid-List AMC in place of Flex-Grid for the page content 
+            mat-grid-list { 
+                width: 100%;
                 
-                align-items: flex-start;
-                align-content: flex-start;
-                border-right: 1px solid rgba(255, 255, 255, 0.12);
-                padding: 1em 1.5em;
-                
-                div.app-div-item:nth-child(1) {
-                    text-align: end;
+                mat-grid-tile {             
+                    border-right: 1px solid rgba(255, 255, 255, 0.12);
+                    article.app-article-item {
+                        padding: 1em 2.5em;
+
+                        div.app-div-item:nth-child(1) {
+                            text-align: end;
+                        }
+                        h1 { line-height: 3rem; }
+                    }
+                    mat-grid-tile-footer {
+                        height: 48px;
+                        color: #fff;
+                        background: transparent;
+                        overflow: hidden;
+                        padding: 1em 2em;
+                        position: absolute;
+                        left: auto;
+                        right: 0;
+                    }
                 }
-            }
-            
-            article.app-article-item:nth-child(2) {
-                @include flex(1 0 40%);
+
+                mat-grid-tile:last-child {
+                    border-right: none;
+                    article.app-article-item {
+                        line-height: 1.8rem;
+                        padding: 1em 2.5em;
                 
-                align-items: flex-start;
-                align-content: flex-start;
-                line-height: 1.7rem;
-                padding: 1em 1.5em;
-        
-                div.app-div-item {
-                    display: block;
-                    width: 100%;
+                        div.app-div-item {
+                            display: block;
+                            text-align: start;
+                            width: 100%;
+                        }
+                    }
+                    mat-grid-tile-footer {
+                        height: 48px;
+                        color: #fff;
+                        background: transparent;
+                        overflow: hidden;
+                        padding: 1em 2em;
+                        position: absolute;
+                        left: 0;
+                        right: auto;
+                    }
                 }
             }
         }

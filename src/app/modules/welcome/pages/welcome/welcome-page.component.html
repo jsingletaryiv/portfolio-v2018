@@ -14,39 +14,74 @@
 
 <!-- Section One -->
 <section class="app-section-config app-section-container app-section-one">
-  <article class="app-article-item">
-    <!-- <h1 class="mat-headline">{{ section1Title | uppercase }}</h1> -->
-    <!-- <mat-divider></mat-divider> -->
-    <div class="app-div-item">
-      <h1 class="mat-headline">
-        Hi! My name is James and welcome to my small corner of cosmic <q>cyber-space</q> dust!
-        A Full-Stack Developer specializing in serving-up Big Data with Cloud-Based Software &amp; Web
-        Applications!
-      </h1>
-    </div>
-  </article>
 
-  <article class="app-article-item">
-    <div class="app-div-item">
-      <p>
-        I have always had a strong passion for building intuitive, real-world solutions that provide a positive
-        impact to it's users &amp; visitors alike.
-      </p>
-      <p>
-        With over 15 years of professional experience, I'm fortunate enough to have worked on a myriad of projects
-        ranging from various bands, musicians &amp; small-businesses to enterprise-level corporations.
-      </p>
-    </div>
-    <!-- TODO: Generate quotes.component using code below  -->
-    <!-- <div>
-      <div class="page-content-card accent">
-        <h1 class="mat-headline">Motivational Fodder:</h1>
-        <p class="mat-body-1">
-          Collaborating with like-minded developers who are as excited about Web Design &amp; Development as I am!
-        </p>
-      </div>
-    </div> -->
-  </article>
+  <!-- <mat-grid-list cols="4" rowHeight="4:3">
+    <mat-grid-tile
+        *ngFor="let tile of tiles"
+        [colspan]="tile.cols"
+        [rowspan]="tile.rows">
+      {{tile.text}}
+    </mat-grid-tile>
+  </mat-grid-list> -->
+
+  <mat-grid-list cols="10" rowHeight="2:1" role="list">
+    <mat-grid-tile colspan="7" rowspan="3" role="listitem">
+      <article class="app-article-item">
+        <!-- <h1 class="mat-headline">{{ section1Title | uppercase }}</h1> -->
+        <!-- <mat-divider></mat-divider> -->
+    
+        <div class="app-div-item">
+          <h1 class="mat-headline">
+            My name is James, a <q>Full-Stack</q> Developer with a focus on Cloud-Based Software &amp; Web Applications - 
+            capable of serving up Big Data in Real-Time via custom built APIs and Microservices. That being said, thank you
+            for visiting this tiny piece of cyber-space that is my domain.
+          </h1>
+        </div>
+      </article>
+      <mat-grid-tile-footer>
+        <div class="button-row">
+          <button mat-raised-button color="primary">
+            <!-- <mat-icon color="primary">account_box</mat-icon> -->
+            <fa-icon [icon]="['fas', 'info-circle']" size="lg"></fa-icon>
+            <span>More About Me</span>
+          </button>
+        </div>
+      </mat-grid-tile-footer>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="3" rowspan="3" role="listitem">
+      <article class="app-article-item">
+        <div class="app-div-item">
+          <p>
+            I have always possesed a strong passion for creating innovative, yet intuitive real-world solutions that provide a positive
+            impact to it's users &amp; visitors alike.
+          </p>
+          <p>
+            With over 18 years of professional experience, I've worked on projects
+            ranging from small widgets to enterprise-level apps.
+          </p>
+        </div>
+        <!-- TODO: Generate quotes.component using code below  -->
+        <!-- <div>
+          <div class="page-content-card accent">
+            <h1 class="mat-headline">Motivational Fodder:</h1>
+            <p class="mat-body-1">
+              Collaborating with like-minded developers who are as excited about Web Design &amp; Development as I am!
+            </p>
+          </div>
+        </div> -->
+      </article>
+      <mat-grid-tile-footer>
+        <div class="button-row">
+          <button mat-raised-button color="accent">
+            <!-- <mat-icon color="primary">account_box</mat-icon> -->
+            <fa-icon [icon]="['fas', 'code']" size="lg"></fa-icon>
+            <span>View Projects</span>
+          </button>
+        </div>
+      </mat-grid-tile-footer>
+    </mat-grid-tile>
+
+  </mat-grid-list>
 
 </section>
 
