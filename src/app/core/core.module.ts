@@ -1,4 +1,4 @@
-import { NgModule, Optional, SkipSelf } from '@angular/core';
+import { NgModule, Optional, SkipSelf, VERSION } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -20,26 +20,32 @@ import { environment } from '../../environments/environment';
   declarations: [
     NavbarComponent
   ],
+  providers: [],
   exports: [
     CoreRoutingModule,
     NavbarComponent
-  ],
-  providers: []
+  ]
 })
 
 export class CoreModule {
 
   // Request current version of Angular
-  public appVersion: string = environment.VERSION;
+  public appName: string = environment.app.NAME;
+  public appVersion: string = environment.app.VERSION;
+  public ngVersion: string = VERSION.full;
 
   // CoreModule Import Guard - See AppModule
   constructor (@Optional() @SkipSelf() parentModule: CoreModule) {
 
     if (parentModule) {
-      throw new Error('CoreModule is already loaded. Import only in AppModule');
+      throw new Error('Oops! `CoreModule` is already loaded. Import only once - preferably in `AppModule`.');
     } else {
-      console.log('CoreModule Loaded!');
-      console.log('App Version: v' + this.appVersion);
+      console.log('Application :: ' + this.appName + ' v' + this.appVersion);
+      console.log('Frameworks  :: Angular ' + this.ngVersion);
+      console.log('CoreModule Loaded.');
+      console.log('Bootstrapping Complete!');
     }
+
   }
+
 }

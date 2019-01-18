@@ -1,13 +1,18 @@
+// Import flex-box prefixes
+@import '../../shared/styles/flexbox-prefix';
+
 // Custom styles and/or AMC overrides
 .app-is-mobile .app-navbar {
     // Create Sticky Navbar
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    @include flexbox();
+    @include flexflow(column nowrap);
+    // display: -webkit-box;
+    // display: -ms-flexbox;
+    // display: flex;
+    // -webkit-box-orient: vertical;
+    // -webkit-box-direction: normal;
+    // -ms-flex-direction: column;
+    // flex-direction: column;
 }
 
 .app-navbar h1  {
@@ -22,9 +27,10 @@
 }
 
 .app-navbar-spacer {
-    // This fills the remaining space, by using flexbox. 
+    // This fills in the remaining space, by using flexbox. 
     // Every toolbar row uses a flexbox row layout.
-    flex: 1 1 auto;
+    flex: 1 1 100%;
+    width: 25%;
 }
 
 .app-navbar-tooltip { // Look into previous tooltip issue

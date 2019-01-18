@@ -1,23 +1,36 @@
 <mat-toolbar class="app-navbar" color="primary" role="navigation">
 
-  <!-- Application title and location -->
-  <h1 class="app-title">{{ myLocation | uppercase }}</h1>
-
-  <!-- Fills in the center space of the mat-toolbar -->
+  <!-- Left spacer for the mat-toolbar -->
   <span class="app-navbar-spacer"></span>
 
-  <!-- Wire up the options menu -->
+  <!-- Application title and location -->
+  <!-- <h1 class="app-title">{{ myLocation | uppercase }}</h1> -->
+
+  <!-- Main navigation & menu -->
   <nav>
-    <a mat-button routerLink="/welcome" routerLinkActive="mat-accent">WELCOME</a>
+    <a mat-button routerLink="/welcome" routerLinkActive="mat-accent">OVERVIEW</a>
     <a mat-button routerLink="/about" routerLinkActive="mat-accent">ABOUT</a>
+
+    <!-- <div class="app-footer-icon-div">
+      <fa-icon [icon]="['fas', 'crown']" size="lg" transform="rotate-345 left-6 down-2"></fa-icon>
+    </div>
+    <div>
+      <span class="mat-title">JS//</span>
+    </div> -->
+
     <a mat-button routerLink="/projects" routerLinkActive="mat-accent">PROJECTS</a>
-    <a mat-button routerLink="/sandbox" routerLinkActive="mat-accent">SANDBOX</a>
     <a mat-button routerLink="/contact" routerLinkActive="mat-accent">CONTACT</a>
+
+    <!-- <a mat-button routerLink="/sandbox" routerLinkActive="mat-accent">SANDBOX</a> -->
     <button mat-icon-button matTooltip="Downloads" [matMenuTriggerFor]="optionsMenu">
       <!-- <fa-icon icon="ellipsis-v" size="lg"></fa-icon> -->
       <fa-icon [icon]="['fas', 'download']" size="lg"></fa-icon>
     </button>
+    
   </nav>
+  
+  <!-- Right spacer for the mat-toolbar -->
+  <span class="app-navbar-spacer"></span>
 
   <!-- Sub-menu for grouping similar account option -->
   <mat-menu #optionsMenu="matMenu" 
@@ -26,13 +39,13 @@
             [overlapTrigger]="false">
     <button mat-menu-item disabled>
       <!-- <mat-icon>share</mat-icon> -->
-      <span>Details &amp; Information:</span>
+      <span>Quick Links:</span>
     </button>
     <mat-divider [inset]="false"></mat-divider>
     <button mat-menu-item>
       <!-- <mat-icon color="primary">account_box</mat-icon> -->
       <fa-icon [icon]="['fas', 'toolbox']" size="sm"></fa-icon>
-      <span>View Projects</span>
+      <span>Project List</span>
     </button>
     <button mat-menu-item>
       <!-- <mat-icon color="primary">account_box</mat-icon> -->
@@ -40,9 +53,11 @@
       <span>Technical Skills</span>
     </button>
     <button mat-menu-item>
-      <!-- <mat-icon color="primary">account_box</mat-icon> -->
+      <mat-icon color="primary">account_box</mat-icon> -->
       <fa-icon [icon]="['fas', 'file-download']" size="sm"></fa-icon>
-      <span>Take my Resume</span>
+      <span>View Resume</span>
     </button>
+
   </mat-menu>
+
 </mat-toolbar>

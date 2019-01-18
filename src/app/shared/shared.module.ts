@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MaterialModule } from './material/material.module';
 import { IconsModule } from './icons/icons.module';
@@ -10,8 +11,9 @@ import { HeaderComponent } from './header/header.component';
 @NgModule({
   imports: [
     CommonModule,
-    IconsModule,
-    MaterialModule
+    FlexLayoutModule,
+    MaterialModule,
+    IconsModule
   ],
   declarations: [
     FooterComponent,
@@ -19,6 +21,7 @@ import { HeaderComponent } from './header/header.component';
   ],
   exports: [
     CommonModule,
+    FlexLayoutModule,
     MaterialModule,
     IconsModule,
     FooterComponent,

@@ -5,5 +5,11 @@
 
 export const environment = {
   production: false,
-  VERSION: require('../../package.json').version
+  app: {
+
+    NAME: require('../../package.json').name,
+    VERSION: require('../../package.json').version
+
+  }
+
 };

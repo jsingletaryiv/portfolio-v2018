@@ -8,12 +8,16 @@
       <span class="app-cursor-blink">&#95;</span>
       {{ pageSubTitle | uppercase }}
     </h2>
+
     <mat-divider></mat-divider>
+
   </div>
+  
 </header>
 
 <!-- Section One -->
-<section class="app-section-config app-section-container app-section-one">
+<!-- NOTE:: Properties for the `flex-container` are being applied from `style.scss` file.  -->
+<section  class="app-section-config app-section-container app-section-one">
 
   <!-- <mat-grid-list cols="4" rowHeight="4:3">
     <mat-grid-tile
@@ -24,9 +28,9 @@
     </mat-grid-tile>
   </mat-grid-list> -->
 
-  <mat-grid-list cols="10" rowHeight="2:1" role="list">
-    <mat-grid-tile colspan="7" rowspan="3" role="listitem">
-      <article class="app-article-item">
+  <mat-grid-list cols="8" rowHeight="2:1" role="list">
+    <mat-grid-tile colspan="6" rowspan="2" role="listitem">
+      <article class="app-article-item" fxFlex="60">
         <!-- <h1 class="mat-headline">{{ section1Title | uppercase }}</h1> -->
         <!-- <mat-divider></mat-divider> -->
     
@@ -37,29 +41,43 @@
             for visiting this tiny piece of cyber-space that is my domain.
           </h1>
         </div>
-      </article>
-      <mat-grid-tile-footer>
-        <div class="button-row">
-          <button mat-raised-button color="primary">
+
+        <div class="button-row" fxFlexAlign="end">
+          <button mat-raised-button color="primary" class="app-button-config">
             <!-- <mat-icon color="primary">account_box</mat-icon> -->
             <fa-icon [icon]="['fas', 'info-circle']" size="lg"></fa-icon>
             <span>More About Me</span>
           </button>
+
         </div>
-      </mat-grid-tile-footer>
+
+      </article> 
+
     </mat-grid-tile>
-    <mat-grid-tile colspan="3" rowspan="3" role="listitem">
-      <article class="app-article-item">
+
+    <mat-grid-tile colspan="2" rowspan="2" role="listitem">
+      <article class="app-article-item" fxFlex>
+
         <div class="app-div-item">
           <p>
-            I have always possesed a strong passion for creating innovative, yet intuitive real-world solutions that provide a positive
-            impact to it's users &amp; visitors alike.
+            I have always possesed a strong passion for creating innovative, yet intuitive real-world solutions that
+            provide a positive impact to it's users &amp; visitors alike.
           </p>
           <p>
             With over 18 years of professional experience, I've worked on projects
             ranging from small widgets to enterprise-level apps.
           </p>
         </div>
+
+        <div class="button-row" fxFlexAlign="end">
+          <button mat-raised-button color="accent" class="app-button-config">
+
+            <fa-icon [icon]="['fas', 'code']" size="lg"></fa-icon>
+            <span>View Projects</span>
+          </button>
+
+        </div>
+
         <!-- TODO: Generate quotes.component using code below  -->
         <!-- <div>
           <div class="page-content-card accent">
@@ -69,16 +87,9 @@
             </p>
           </div>
         </div> -->
+
       </article>
-      <mat-grid-tile-footer>
-        <div class="button-row">
-          <button mat-raised-button color="accent">
-            <!-- <mat-icon color="primary">account_box</mat-icon> -->
-            <fa-icon [icon]="['fas', 'code']" size="lg"></fa-icon>
-            <span>View Projects</span>
-          </button>
-        </div>
-      </mat-grid-tile-footer>
+
     </mat-grid-tile>
 
   </mat-grid-list>
