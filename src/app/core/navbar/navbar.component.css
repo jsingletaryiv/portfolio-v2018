@@ -1,19 +1,27 @@
 .app-is-mobile .app-navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: column nowrap;
-  -webkit-box-direction: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
+  width: 100%;
 }
 
-.app-navbar h1 {
+.app-navbar {
+  background-color: transparent;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+
+nav .app-navbar h1 {
   font-family: 'Unica One', normal;
 }
 
-.app-navbar h1 .app-title {
-  margin-left: 4px;
+nav .app-navbar h1 .app-title {
+  margin-left: 2vw;
+}
+
+.app-navbar-logo-padding {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 1px;
+  padding: 0 2rem;
 }
 
 .app-navbar-spacer {
@@ -21,6 +29,15 @@
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
   width: 25%;
+}
+
+.app-navbar-trans {
+  background-color: transparent !important;
+}
+
+.app-navbar-transition {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .app-navbar-tooltip {

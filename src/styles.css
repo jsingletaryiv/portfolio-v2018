@@ -84,178 +84,81 @@ app-root > app-welcome h4 {
   margin: 0;
 }
 
-app-root > app-about section.app-section-container,
-app-root > app-contact section.app-section-container,
-app-root > app-projects section.app-section-container,
-app-root > app-sandbox section.app-section-container,
-app-root > app-welcome section.app-section-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: row nowrap;
-  -webkit-box-direction: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin: 0;
-  padding: 5vh 5vw;
+app-root > app-about div > section.app-section-container,
+app-root > app-contact div > section.app-section-container,
+app-root > app-projects div > section.app-section-container,
+app-root > app-sandbox div > section.app-section-container,
+app-root > app-welcome div > section.app-section-container {
   list-style: none;
   background-color: #212121;
-  min-height: 100%;
   width: 100%;
   z-index: 2;
 }
 
-app-root > app-about section.app-section-container p,
-app-root > app-contact section.app-section-container p,
-app-root > app-projects section.app-section-container p,
-app-root > app-sandbox section.app-section-container p,
-app-root > app-welcome section.app-section-container p {
+app-root > app-about div > section.app-section-container p,
+app-root > app-contact div > section.app-section-container p,
+app-root > app-projects div > section.app-section-container p,
+app-root > app-sandbox div > section.app-section-container p,
+app-root > app-welcome div > section.app-section-container p {
   margin-bottom: 2em;
 }
 
-app-root > app-about section.app-section-container p:last-child,
-app-root > app-contact section.app-section-container p:last-child,
-app-root > app-projects section.app-section-container p:last-child,
-app-root > app-sandbox section.app-section-container p:last-child,
-app-root > app-welcome section.app-section-container p:last-child {
+app-root > app-about div > section.app-section-container p:last-child,
+app-root > app-contact div > section.app-section-container p:last-child,
+app-root > app-projects div > section.app-section-container p:last-child,
+app-root > app-sandbox div > section.app-section-container p:last-child,
+app-root > app-welcome div > section.app-section-container p:last-child {
   margin-bottom: 0;
 }
 
-app-root > app-about section.app-section-container small,
-app-root > app-contact section.app-section-container small,
-app-root > app-projects section.app-section-container small,
-app-root > app-sandbox section.app-section-container small,
-app-root > app-welcome section.app-section-container small {
+app-root > app-about div > section.app-section-container small,
+app-root > app-contact div > section.app-section-container small,
+app-root > app-projects div > section.app-section-container small,
+app-root > app-sandbox div > section.app-section-container small,
+app-root > app-welcome div > section.app-section-container small {
   font-size: .8rem;
 }
 
-app-root > app-about section.app-section-container.app-section-one mat-grid-list,
-app-root > app-contact section.app-section-container.app-section-one mat-grid-list,
-app-root > app-projects section.app-section-container.app-section-one mat-grid-list,
-app-root > app-sandbox section.app-section-container.app-section-one mat-grid-list,
-app-root > app-welcome section.app-section-container.app-section-one mat-grid-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-app-root > app-about section.app-section-container.app-section-one mat-grid-list mat-grid-tile,
-app-root > app-contact section.app-section-container.app-section-one mat-grid-list mat-grid-tile,
-app-root > app-projects section.app-section-container.app-section-one mat-grid-list mat-grid-tile,
-app-root > app-sandbox section.app-section-container.app-section-one mat-grid-list mat-grid-tile,
-app-root > app-welcome section.app-section-container.app-section-one mat-grid-list mat-grid-tile {
-  -webkit-box-orient: column wrap;
-  -webkit-box-direction: column wrap;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+app-root > app-about div > section.app-section-container.app-section-one article.app-article-item:nth-child(1),
+app-root > app-contact div > section.app-section-container.app-section-one article.app-article-item:nth-child(1),
+app-root > app-projects div > section.app-section-container.app-section-one article.app-article-item:nth-child(1),
+app-root > app-sandbox div > section.app-section-container.app-section-one article.app-article-item:nth-child(1),
+app-root > app-welcome div > section.app-section-container.app-section-one article.app-article-item:nth-child(1) {
   border-right: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 1em 1.5em;
 }
 
-app-root > app-about section.app-section-container.app-section-one mat-grid-list mat-grid-tile article.app-article-item,
-app-root > app-contact section.app-section-container.app-section-one mat-grid-list mat-grid-tile article.app-article-item,
-app-root > app-projects section.app-section-container.app-section-one mat-grid-list mat-grid-tile article.app-article-item,
-app-root > app-sandbox section.app-section-container.app-section-one mat-grid-list mat-grid-tile article.app-article-item,
-app-root > app-welcome section.app-section-container.app-section-one mat-grid-list mat-grid-tile article.app-article-item {
-  padding: 1em 2.5em;
-}
-
-app-root > app-about section.app-section-container.app-section-one mat-grid-list mat-grid-tile article.app-article-item div.app-div-item:nth-child(1),
-app-root > app-contact section.app-section-container.app-section-one mat-grid-list mat-grid-tile article.app-article-item div.app-div-item:nth-child(1),
-app-root > app-projects section.app-section-container.app-section-one mat-grid-list mat-grid-tile article.app-article-item div.app-div-item:nth-child(1),
-app-root > app-sandbox section.app-section-container.app-section-one mat-grid-list mat-grid-tile article.app-article-item div.app-div-item:nth-child(1),
-app-root > app-welcome section.app-section-container.app-section-one mat-grid-list mat-grid-tile article.app-article-item div.app-div-item:nth-child(1) {
+app-root > app-about div > section.app-section-container.app-section-one article.app-article-item:nth-child(1) div.app-div-item:nth-child(1),
+app-root > app-contact div > section.app-section-container.app-section-one article.app-article-item:nth-child(1) div.app-div-item:nth-child(1),
+app-root > app-projects div > section.app-section-container.app-section-one article.app-article-item:nth-child(1) div.app-div-item:nth-child(1),
+app-root > app-sandbox div > section.app-section-container.app-section-one article.app-article-item:nth-child(1) div.app-div-item:nth-child(1),
+app-root > app-welcome div > section.app-section-container.app-section-one article.app-article-item:nth-child(1) div.app-div-item:nth-child(1) {
   text-align: end;
 }
 
-app-root > app-about section.app-section-container.app-section-one mat-grid-list mat-grid-tile article.app-article-item h1,
-app-root > app-contact section.app-section-container.app-section-one mat-grid-list mat-grid-tile article.app-article-item h1,
-app-root > app-projects section.app-section-container.app-section-one mat-grid-list mat-grid-tile article.app-article-item h1,
-app-root > app-sandbox section.app-section-container.app-section-one mat-grid-list mat-grid-tile article.app-article-item h1,
-app-root > app-welcome section.app-section-container.app-section-one mat-grid-list mat-grid-tile article.app-article-item h1 {
-  line-height: 2.5rem;
+app-root > app-about div > section.app-section-container.app-section-one article.app-article-item:nth-child(2),
+app-root > app-contact div > section.app-section-container.app-section-one article.app-article-item:nth-child(2),
+app-root > app-projects div > section.app-section-container.app-section-one article.app-article-item:nth-child(2),
+app-root > app-sandbox div > section.app-section-container.app-section-one article.app-article-item:nth-child(2),
+app-root > app-welcome div > section.app-section-container.app-section-one article.app-article-item:nth-child(2) {
+  line-height: 1.7rem;
+  padding: 1em 1.5em;
 }
 
-app-root > app-about section.app-section-container.app-section-one mat-grid-list mat-grid-tile mat-grid-tile-footer,
-app-root > app-contact section.app-section-container.app-section-one mat-grid-list mat-grid-tile mat-grid-tile-footer,
-app-root > app-projects section.app-section-container.app-section-one mat-grid-list mat-grid-tile mat-grid-tile-footer,
-app-root > app-sandbox section.app-section-container.app-section-one mat-grid-list mat-grid-tile mat-grid-tile-footer,
-app-root > app-welcome section.app-section-container.app-section-one mat-grid-list mat-grid-tile mat-grid-tile-footer {
-  height: 100%;
-  color: #fff;
-  background: transparent;
-  overflow: hidden;
-  padding: 1em 2em;
-  position: relative;
-  left: auto;
-  right: 0;
-}
-
-app-root > app-about section.app-section-container.app-section-one mat-grid-list mat-grid-tile:last-child,
-app-root > app-contact section.app-section-container.app-section-one mat-grid-list mat-grid-tile:last-child,
-app-root > app-projects section.app-section-container.app-section-one mat-grid-list mat-grid-tile:last-child,
-app-root > app-sandbox section.app-section-container.app-section-one mat-grid-list mat-grid-tile:last-child,
-app-root > app-welcome section.app-section-container.app-section-one mat-grid-list mat-grid-tile:last-child {
-  -webkit-box-orient: column wrap;
-  -webkit-box-direction: column wrap;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  border-right: none;
-}
-
-app-root > app-about section.app-section-container.app-section-one mat-grid-list mat-grid-tile:last-child article.app-article-item,
-app-root > app-contact section.app-section-container.app-section-one mat-grid-list mat-grid-tile:last-child article.app-article-item,
-app-root > app-projects section.app-section-container.app-section-one mat-grid-list mat-grid-tile:last-child article.app-article-item,
-app-root > app-sandbox section.app-section-container.app-section-one mat-grid-list mat-grid-tile:last-child article.app-article-item,
-app-root > app-welcome section.app-section-container.app-section-one mat-grid-list mat-grid-tile:last-child article.app-article-item {
-  line-height: 1.8rem;
-  padding: 1em 2.5em;
-}
-
-app-root > app-about section.app-section-container.app-section-one mat-grid-list mat-grid-tile:last-child article.app-article-item div.app-div-item,
-app-root > app-contact section.app-section-container.app-section-one mat-grid-list mat-grid-tile:last-child article.app-article-item div.app-div-item,
-app-root > app-projects section.app-section-container.app-section-one mat-grid-list mat-grid-tile:last-child article.app-article-item div.app-div-item,
-app-root > app-sandbox section.app-section-container.app-section-one mat-grid-list mat-grid-tile:last-child article.app-article-item div.app-div-item,
-app-root > app-welcome section.app-section-container.app-section-one mat-grid-list mat-grid-tile:last-child article.app-article-item div.app-div-item {
+app-root > app-about div > section.app-section-container.app-section-one article.app-article-item:nth-child(2) div.app-div-item,
+app-root > app-contact div > section.app-section-container.app-section-one article.app-article-item:nth-child(2) div.app-div-item,
+app-root > app-projects div > section.app-section-container.app-section-one article.app-article-item:nth-child(2) div.app-div-item,
+app-root > app-sandbox div > section.app-section-container.app-section-one article.app-article-item:nth-child(2) div.app-div-item,
+app-root > app-welcome div > section.app-section-container.app-section-one article.app-article-item:nth-child(2) div.app-div-item {
   display: block;
-  text-align: start;
   width: 100%;
 }
 
-app-root > app-about section.app-section-container.app-section-one mat-grid-list mat-grid-tile:last-child mat-grid-tile-footer,
-app-root > app-contact section.app-section-container.app-section-one mat-grid-list mat-grid-tile:last-child mat-grid-tile-footer,
-app-root > app-projects section.app-section-container.app-section-one mat-grid-list mat-grid-tile:last-child mat-grid-tile-footer,
-app-root > app-sandbox section.app-section-container.app-section-one mat-grid-list mat-grid-tile:last-child mat-grid-tile-footer,
-app-root > app-welcome section.app-section-container.app-section-one mat-grid-list mat-grid-tile:last-child mat-grid-tile-footer {
-  height: 48px;
-  color: #fff;
-  background: transparent;
-  overflow: hidden;
-  padding: 1em 2em;
-  position: absolute;
-  left: 0;
-  right: auto;
-}
-
-app-root > app-about section.app-section-container.app-section-two .app-card-content,
-app-root > app-contact section.app-section-container.app-section-two .app-card-content,
-app-root > app-projects section.app-section-container.app-section-two .app-card-content,
-app-root > app-sandbox section.app-section-container.app-section-two .app-card-content,
-app-root > app-welcome section.app-section-container.app-section-two .app-card-content {
+app-root > app-about div > section.app-section-container.app-section-two .app-card-content,
+app-root > app-contact div > section.app-section-container.app-section-two .app-card-content,
+app-root > app-projects div > section.app-section-container.app-section-two .app-card-content,
+app-root > app-sandbox div > section.app-section-container.app-section-two .app-card-content,
+app-root > app-welcome div > section.app-section-container.app-section-two .app-card-content {
   min-height: 20px;
   padding: 15px;
   margin-bottom: 15px;
@@ -266,19 +169,19 @@ app-root > app-welcome section.app-section-container.app-section-two .app-card-c
   box-shadow: none;
 }
 
-app-root > app-about section.app-section-container.app-section-two .app-card-content .mat-card-header > .mat-card-header-text,
-app-root > app-contact section.app-section-container.app-section-two .app-card-content .mat-card-header > .mat-card-header-text,
-app-root > app-projects section.app-section-container.app-section-two .app-card-content .mat-card-header > .mat-card-header-text,
-app-root > app-sandbox section.app-section-container.app-section-two .app-card-content .mat-card-header > .mat-card-header-text,
-app-root > app-welcome section.app-section-container.app-section-two .app-card-content .mat-card-header > .mat-card-header-text {
+app-root > app-about div > section.app-section-container.app-section-two .app-card-content .mat-card-header > .mat-card-header-text,
+app-root > app-contact div > section.app-section-container.app-section-two .app-card-content .mat-card-header > .mat-card-header-text,
+app-root > app-projects div > section.app-section-container.app-section-two .app-card-content .mat-card-header > .mat-card-header-text,
+app-root > app-sandbox div > section.app-section-container.app-section-two .app-card-content .mat-card-header > .mat-card-header-text,
+app-root > app-welcome div > section.app-section-container.app-section-two .app-card-content .mat-card-header > .mat-card-header-text {
   margin: 0 0 15px 0;
 }
 
-app-root > app-about section.app-section-container .app-content-spacer,
-app-root > app-contact section.app-section-container .app-content-spacer,
-app-root > app-projects section.app-section-container .app-content-spacer,
-app-root > app-sandbox section.app-section-container .app-content-spacer,
-app-root > app-welcome section.app-section-container .app-content-spacer {
+app-root > app-about div > section.app-section-container .app-content-spacer,
+app-root > app-contact div > section.app-section-container .app-content-spacer,
+app-root > app-projects div > section.app-section-container .app-content-spacer,
+app-root > app-sandbox div > section.app-section-container .app-content-spacer,
+app-root > app-welcome div > section.app-section-container .app-content-spacer {
   height: 500px;
 }
 
